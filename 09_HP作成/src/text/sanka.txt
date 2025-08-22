@@ -1,0 +1,6 @@
+0
+start
+50
+odaka
+1000
+end
