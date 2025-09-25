@@ -1,0 +1,2619 @@
+//   生成日時: 2022/02/24 19:13:14
+0,1,C0001 %d%d%d%d%d%d%d%d%d%d%d%d%d%d%d
+0,2,C0002 MailBox Over mbx=%d msg=0x%x
+0,3,C0003 msgcnt=%d, msgmax=%d
+0,4,C0004 mbx=%d, threadid=%d, msgid=0x%x, data1=%d, data2=0x%x
+0,5,C0005 Error msg threadId:mbx=%d, threadid=%d, msgid=0x%x, data1=%d, data2=0x%x
+0,6,C0006 CurrentTaskInfo:mbx=%d, threadid=%d, msgid=0x%x, data1=%d, data2=0x%x
+0,7,C0007 [FW Version: %c%c%c_%c%c%c%c.%c%c%c.%c%c%c]
+0,8,C0008 ResetFactor:0x%x, optionState:0x%x, sleepOutFactor:0x%x
+0,9,C0009 Profile, mbxId, Latency[us], Count
+0,10,C0010 %d, %d00, %d
+0,11,C0011 EXCEPTION_Gpri(%d).rcv err:%d
+0,12,C0012 EXCEPTION_SND_MBX mbx=%d err:%d
+0,13,C0013 EXCEPTION_RCV_MBX mbx=%d err:%d
+0,14,C0014 EXCEPTION_GET_PRI tskid=%d err:%d
+0,15,C0015 EXCEPTION_GScn.rcv err:%d
+0,16,C0016 EXCEPTION_GScnAsic.rcv err:%d
+0,17,C0017 EXCEPTION_GScnCrg.rcv err:%d
+0,18,C0018 EXCEPTION_GScnDpact.rcv err:%d
+0,19,C0019 EXCEPTION_SND_MBX_EXDATA mbx=%d exdata:0x%x
+0,20,C0020 PERFORMANCE WARNING[%x][%x]:%hx,%x,%x,%hx,%hx
+0,21,C0021 Engine Board Type: %c%c%c%c%c%c%c%c%c
+0,22,C0022 ERROR_Stack%d,%08lx
+0,23,C0446 [EEPROM]eussE2pAddressTblError!
+0,24,C0447 [EEPROM]gSioSizeError!
+1,1,C0023 ChangeState %d -> %d
+1,2,C0024 Condition Event 0x%x val=%d
+1,3,C0025 State Change Event 0x%x
+1,4,C0026 ServiceCall C-%04x
+1,5,C0027 Scan ChangeState %d -> %d
+2,1,C0028 pause_error_state seqId:%03d Sta:%d sce:%03d
+2,2,C0029 resume_error_type seqId:%03d type:%d sce:%03d
+2,3,C0030 resume_error_state seqId:%03d Sta:%d sce:%03d
+2,4,C0031 attach_error_SCEID client:%02d sce:%03d param:%d
+2,5,C0032 attach_error_BUF client:%02d sce:%03d param:%d
+2,6,C0033 execute_error_act/bra act:%d bra:%d seqId:%03d sce:%03d point:%02d
+2,7,C0034 guard_error_seqId seqId:%03d sce:%03d
+2,8,C0035 guard_error_state seqId:%03d sce:%03d
+2,9,C0036 pointUpdate_error_missing_point seqId:%03d update:%02d sce:%03d
+2,10,C0037 setTimer_error seqId:%03d sce:%03d
+2,11,C0038 convertScenario_error scenario:%03d column:%d LEnd:%d LPos:%d LEndx:%d LPosx:%d
+2,12,C0039 convertScenario_error scenario:%03d column:%d LEnd:%d LPos:%d LEndx:%d LPosx:%d LEndx2:%d LPosx2:%d
+2,13,C0040 clearMonitorData_error_state seqId:%03d sce:%03d
+2,14,C0041 DBG_INFO seqId:%03d Sta:%d pri:%d type:%d client:%02d sce:%03d point:%02d epi:%02d sub:%02d monSub:%02d monTmId:%02d monEvmId:%02d monEvmTmId:%02d
+2,15,C0042 stopMonitor_error seqId:%03d type:%d sce:%03d
+2,16,C0043 actEndOfScenario seqId:%03d sce:%03d client:%02d point:%02d
+2,17,C0044 actTimer_error_epi_none seqId:%03d sce:%03d point:%02d
+2,18,C0045 actDetector_error_epi_none seqId:%03d sce:%03d point:%02d
+2,19,C0046 actDetector_dtc_start seqId:%03d sce:%03d point:%02d result:%d
+2,20,C0047 actDetector_error_dtc_start seqId:%03d sce:%03d point:%02d result:%d
+2,21,C0048 actEventMonitor_error_epi_none seqId:%03d sce:%03d point:%02d
+2,22,C0049 actEventMonitor_evm_start seqId:%03d sce:%03d point:%02d result:%d
+2,23,C0050 actEventMonitor_error_evm_start seqId:%03d sce:%03d point:%02d result:%d
+2,24,C0051 actSubScenario seqId:%03d sce:%03d point:%02d info2:%02d param:%d
+2,25,C0052 actNextScenario_sce_end seqId:%03d sce:%03d
+2,26,C0053 actNextScenario_sce_start seqId:%03d sce:%03d
+2,27,C0054 actNextScenario_error_SCEID seqId:%03d sce:%03d point:%02d
+2,28,C0055 actNotifyStateController seqId:%03d sce:%03d client:%02d point:%02d
+2,29,C0056 actJumpPoint_error seqId:%03d info2:%02d sce:%03d
+2,30,C0057 dup_setup scenarioId=%d param=%d clientId=%d
+2,31,C0058 dup_start scenarioId=%d param=%d clientId=%d
+2,32,C0059 ScenarioId Error %d
+2,33,C0060 EXCEPTION_mseq updateTimer seqId:%03d sce:%03d point:%02d
+2,34,C0448 COMPSequencer Measure : measureSeqMax=%d MAX=%d measureSeq=%d
+3,1,C0061 %d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,
+3,2,C0062 %d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,
+3,3,C0063 %d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,
+3,4,C0064 <<Memory Dump>> start adrs:0x%08X, size:%ld(byte)
+3,5,C0065 0x%04X%04X: %04X %04X %04X %04X %04X %04X %04X %04X
+3,6,C0066 No   val:sensor
+3,7,C0067 >>> Change Log Output Mode(SYSLOG=>TCM)
+3,8,C0068 >>> Change Log Output Mode(TCM=>SYSLOG)
+3,9,C0069 >>> Change LogLevel(GRP:%d,LEVEL:%d=>%d)
+3,10,C0070 NG:: change LogLevel
+3,12,C0071 --- system command ---
+3,13,C0072 --- user command ---
+3,14,C0073 [d] : Memory Dump
+3,15,C0074 [m] : Memory Write
+3,16,C0075 [r] : Replay Syslog
+3,17,C0076 [h] : Help
+3,18,C0077 [boot] : Boot
+3,19,C0078 [tcm] : Change Log Output Mode(SYSLOG<=>TCM)
+3,20,C0079 [chglvl (grp) (lvl)] : Change LogLevel(lvl=1:Err only, n=2:Err/Warn, n=3:ALL)
+3,22,C0080 0x%08X: 0x%08X => 0x%08X
+3,23,C0081 0x%04X%04X: 0x%04X => 0x%04X
+3,24,C0082 0x%02X%02X%02X%02X: 0x%02X => 0x%02X
+3,26,C0083 SyntaxError
+3,27,C0084 S>
+3,30,C0085 >>>>>========== SyslogBuffer Overflow ==========<<<<<
+3,31,C0086 [ramlog] : Output Tcmlog from Ramlog buffer
+3,32,C0087             +0+1 +2+3 +4+5 +6+7 +8+9 +A+B +C+D +E+F    0123456789ABCDEF
+3,34,C0088 asicBurstWrite asicw:%d:%04x:%02x
+3,35,C0089 asicScenarioWrite asicw:%d:%04x:%02x
+3,36,C0090 asicByteWrite asicw:%d:%04x:%02x
+3,37,C0091 asicReferenceWrite asicw:%d:%04x:%02x
+3,39,C0500 tracePoint:%02X Priority:%02X group:%X devId:%02X InOut:%X Step:%02X
+4,1,C0092 Sts%03d=0x%x
+4,4,C0093 keyUnit:setSts %d -> %d
+4,5,C0094 keyUnit:chkEjectBlank %d %d %d
+4,6,C0095 keyCnt:countUpInfo %d %d %d %d
+4,7,C0096 keyCard:countUpInfo %d %d %d %d %d
+4,8,C0097 keyCard:countUpInfo2 %d %d %d %d
+4,9,C0098 keyCard:chkEjectBlank %d %d %d
+4,10,C0099 keyCard:timeOutErr %d
+4,11,C0100 keyCard:push %d
+4,12,C0101 keyCard:pop %d
+4,13,C0102 Asic Access Complete
+4,15,C0449 Dev:%d Sta:%d ErrCause:%d Retry:%d ErrAdd:%d LastAdd:%d ErrCode:%d
+8,1,C0103 DBG_INFO regId:%02d Sta:%d Tim:%d Param:%d
+8,2,C0104 Buffer Use (UseMax/Capacity) %d/%d
+8,3,C0105 Buffer OverFlow
+9,1,C0106 DBG_INFO regId:%02d Sta:%d devId:%02d type:%02d wait:%d now:%d Param:%d
+9,2,C0107 Buffer Use (UseMax/Capacity) %d/%d
+9,3,C0108 Buffer OverFlow
+9,4,C0109 Sensor %d Fix %d
+9,5,C0110 Sensor %d Release %d
+10,1,C0111 Wait regId:%02d Sta:%d evtId:%02d wait:0x%x data:0x%x Param:%d
+10,2,C0112 Start eventId:%d %02d/%02d
+10,3,C0113 Detect eventId:%d %02d
+10,4,C0114 Buffer Use (UseMax/Capacity) %d/%d
+10,5,C0115 Buffer OverFlow
+11,1,C0116 Initialize
+11,2,C0117 reset
+11,3,C0118 send 0x%x
+11,4,C0119 recv 0x%x
+11,5,C0120 CheckSumError 0x%x
+11,6,C0121 buf[%d] = 0x%x
+11,7,C0122 G6:cmd 0x%04x Not Support
+12,1,C0123 read 0x%x 0x%x
+12,2,C0124 C0160:EEPROM Data Error device:%d
+12,3,C0125 C4700:VideoAsicAccessError %d (9:GARNET/10:FPGA)
+12,4,C0126 EEPROM Write Retry  device:%d cnt:%d step:%d gInfResult:%d
+12,5,C0127 EEPROM Read Retry  device:%d cnt:%d step:%d gInfResult:%d
+12,6,C0443 OPTION_UNIT EEPROM Data Error step=%d device:%d
+12,8,C0444 COMPLETE NEW STARGE device:%d
+12,9,C0445 JUDGE NEW STARGE device:%d
+13,1,C0128 relayRetry %d
+13,2,C0129 checkConnection
+17,1,C0130 CTSim %d %d %d %d %d %d
+19,1,C0131 EXCEPTION_mdev SuspIdErr(%d)
+19,2,C0132 EXCEPTION_mdev SusTimIdErr(%d,%d)
+19,3,C0133 EXCEPTION_mdev RespIdErr(%d)
+19,4,C0134 EXCEPTION_mdev ResTimIdErr(%d,%d)
+19,5,C0135 EXCEPTION_mdev StppIdErr(%d)
+19,6,C0136 EXCEPTION_mdev FirpIdErr(%d,%ld,%ld,%ld)
+19,7,C0137 EXCEPTION_mdev MonErr(%d,%ld,%ld,%ld)
+19,8,C0138 EXCEPTION_mdev devTblErr(%d)
+19,9,C0139 EXCEPTION_mdev devPgIdErr(%d,%d,%d)
+21,1,C0140 Write Error devId=%d controlByte=%d CommandByteSize=%d pos=%d
+21,2,C0141 Read Error devId=%d controlByte=%d CommandByteSize=%d pos=%d
+21,3,C0142 Timeout devId=%d controlByte=%d CommandByteSize=%d pos=%d
+21,4,C0143 BusBusy devId=%d controlByte=%d CommandByteSize=%d pos=%d BSY=%d SCL=%d SDA=%d
+21,5,C0144 Illigal Interrupt devId=%d controlByte=%d CommandByteSize=%d pos=%d
+21,6,C0145 BusSelect Error DeviceId=%d
+21,7,C0146 Wait Bus Free %d(read=0,write=1,retry=2)
+21,9,C0450 Hercules I2C Error point=%d status=%d count=%d
+22,1,C0147 SM_411：write 0x%02x data:%d
+37,1,C0148 sts %x: %x %x %x
+37,2,C0149 com %x: %x %x %x
+37,3,C0150 PF_PAUSE_%d
+37,4,C0151 df,cmd,rdy
+37,5,C0152 df,cmd,setup
+37,6,C0153 df,cmd,s,staple,[%d],%x<-%x
+37,7,C0154 df,cmd,sta
+37,8,C0155 df,cmd,sta,cvrOpen
+37,9,C0156 df,cmd,safeSw,openJam
+37,10,C0157 df,cmd,topSw,openJam
+37,11,C0158 df,cmd,sta,cvrClose
+37,12,C0159 df,cmd,stop
+37,13,C0160 df,cmd,chgspd,%hd
+37,14,C0161 df,cmd,eq
+37,15,C0162 df,cmd,jamReq
+37,16,C0163 df,cmd,cReq
+37,17,C0164 df,cmd,eject,%hd
+37,18,C0165 df,cmd,e,staple,[%d],%x<-%x
+37,19,C0166 df,cmd,frcEje
+37,20,C0167 df,cmd,reqAll
+37,21,C0168 df,cmd,req,%hd
+37,22,C0169 df,cmd,rBk,%lx
+37,23,C0170 df,cmd,wBk,%lx
+37,24,C0171 df,cmd,wIni,%lx
+37,25,C0172 df,cmd,allRdy
+37,26,C0173 df,cmd,usb
+37,27,C0174 df,rcv,%x,%x,%x,%ld
+37,28,C0175 df,chk1,cvr,%x->%x
+37,29,C0176 df,chk1,cvr,nfy,%hx,%lx,%x
+37,30,C0177 df,chk1,jamReq
+37,31,C0178 df,nfy,ccall,%x,%lx,%x
+37,32,C0179 df,cCode,MAINLESS,%x->1
+37,33,C0180 df,cCode,MAINLESS,%x->0
+37,34,C0181 df,eq,next,dfVer
+37,35,C0182 df,init>
+37,36,C0183 df,init<
+37,37,C0184 500F:E %ldH%08lx.
+37,38,C0185 df,ini,rdy
+37,39,C0186 df,exe,wait,rdy
+37,40,C0187 df,exe,wait,setup
+37,41,C0188 df,exe,wait,sta
+37,42,C0189 df,exe,wait,chgSpd
+37,43,C0190 df,exe,wait,forceEje
+37,44,C0191 df,exe,wait,mainte
+37,45,C0192 df,exe,run,eje
+37,46,C0193 df,exe,run,ForceEje
+37,47,C0194 df,exe,run,rdy
+37,48,C0195 df,exe,run,stop
+37,49,C0196 df,exe,run,setup
+37,50,C0197 df,exe,run,chgSpd
+37,51,C0198 df,exe,run,set,AKsen
+37,52,C0199 df,exe,end,forceEje
+37,53,C0200 df,Eje
+37,54,C0201 df,break
+37,55,C0202 df,mainte
+37,56,C0203 df,status,%x->%x
+37,57,C0204 df,chk1,nfy,rdy
+37,58,C0205 df,chk1,nfy,stapleEmpty
+37,59,C0206 df,chk1,reqCcall
+37,60,C0207 df,chk1,jamClr
+37,61,C0208 4000F:reset.
+37,62,C0209 df,chk1,nfy,mTryFull,%ld
+37,63,C0210 df,chk1,cvrClose,jamClr
+37,64,C0211 df,chk1,cvrOpenJam,StapleCoverSW
+37,65,C0212 df,chk1,cvrOpenJam,TopSW
+37,66,C0213 df,chk1,midTrayPap,%x
+37,67,C0214 df,chk12,rcvCnt,%x
+37,68,C0215 df,chk12,rcvVer,%x
+37,69,C0216 df,rcvVer,%x
+37,70,C0217 df,ver,%lx,%x,%x,%x,%x
+37,71,C0218 df,ver,next,dfboot
+37,72,C0219 df,rcvCnt,%x,%lx
+37,73,C0220 df,rcvCnt,[%lx],%lx==%lx
+37,74,C0221 df,rcvCnt,wrt,[%ld],%hx,%ld
+37,75,C0222 500F:W-R%ld=%ld.
+37,76,C0223 500F:CNT-W %ld=%ld.
+37,77,C0224 OPTCOMERR_INT
+37,78,C0225 OPTCOMERR_TBI_NG
+37,79,C0226 OPTCOMERR_NO_DATA
+37,80,C0227 OPTCOMERR_TRANS_NG
+37,81,C0228 OPTCOMERR_SIGNAL
+37,82,C0229 OPTCOMERR_CHECK
+37,83,C0230 OPT%d:DL NGend
+37,84,C0231 snd:0x%x.
+37,85,C0232 flg:0x%x.
+37,86,C0233 OPT%d:DL OKend
+37,87,C0234 TWOD:ERR %d.
+37,88,C0235 TWOD:WARN %d.
+37,89,C0236 command:normal
+37,90,C0237 command:ready
+37,91,C0238 command:brand,%d
+37,92,C0239 command:checkConnect
+37,93,C0240 command:equipstatus
+37,94,C0241 command:ccall
+37,95,C0242 command:jam
+37,96,C0243 command:pause
+37,97,C0244 command:pause resume,%x
+37,98,C0245 command:start action,0x%x
+37,99,C0246 command:clear ccall
+37,100,C0247 command:changeSpeed,0x%x,%d
+37,101,C0248 command:read backup
+37,102,C0249 command:write backup
+37,103,C0250 command:mainte in
+37,104,C0251 command:mainte out
+37,105,C0252 command:usb log
+37,106,C0253 command:default
+37,107,C0254 1st send
+37,108,C0255 rcv,%x,%x,%x
+37,109,C0256 chk1,resetCnt,%d
+37,110,C0257 chk1,csRdy,%d
+37,111,C0258 chk1,rem,%x->%x
+37,112,C0259 chk1,size,%x->%x
+37,113,C0260 chk1,sta,%x->%x
+37,114,C0261 chk1,jam,%x
+37,115,C0262 chk2,csRdy,%d
+37,116,C0263 chk2,rem,%x->%x
+37,117,C0264 chk2,size,%x->%x
+37,118,C0265 chk2,sta,%x->%x
+37,119,C0266 chk4,nfy,%x,%x
+37,120,C0267 chk5,chgSpd
+37,121,C0268 chk5,ver
+37,122,C0269 chk11,wrt,%d
+37,123,C0270 chk11,wrt,warn
+37,124,C0271 chk12,NotRdy
+37,125,C0272 bakTimOut,%x
+37,126,C0273 exec,%x,%x
+37,127,C0274 gtype
+37,128,C0275 chkuni,%x,%x
+37,129,C0276 cnvRem,%d->%d
+37,130,C0277 FailFD St%d=%d
+37,131,C0278 m901,con
+37,132,C0279 4000F:ERR %d.
+37,133,C0280 4000F:WARN %d.
+37,134,C0281 4000F:ccall %d<-%d.
+37,135,C0282 4000F:jam,%x,pos,%x|%x->%x
+37,136,C0283 dfw,cnvbin,%x,%x,[%x]->%x"
+37,137,C0284 df,cmd,s,punch,[%d],%x<-%x
+37,138,C0285 df,eje,last,%x,%x
+37,139,C0286 df,cmd,e,staple,[%d],%x<-%x
+37,140,C0287 df,cmd,dis_stpl
+37,141,C0288 df,cmd,en_stpl
+37,142,C0289 df,chk1,nfy,sTryFull,%d
+37,143,C0290 df,chk1,cvr,nfy,%x,%x,%x
+37,144,C0291 df,chk2,wrt,midTryPap,%x
+37,145,C0292 df,chk2,wrt,sadTryPap,%x
+37,146,C0293 df,chk2,nfy,%x,%x,%x
+37,147,C0294 df,chk2,leftCvr,open
+37,148,C0295 df,chk2,stkCvr,open
+37,149,C0296 df,chk2,mailCvr,open
+37,150,C0297 df,chk2,stkCvr,%x->%x
+37,151,C0298 df,chk2,stkCvr,close
+37,152,C0299 df,chk2,nfy,bfJam,%x
+37,153,C0300 df,chk2,mailCvr,%x->%x
+37,154,C0301 df,chk2,mailCvr,close
+37,155,C0302 df,chk2,nfy,mbJam,%x
+37,156,C0303 df,chk2,nfy,jamReq
+37,157,C0304 df,eq,nfy,%x->%x
+37,158,C0305 df,eq,next,dfVer
+37,159,C0306 df,chk12,staple,%x
+37,160,C0307 df,chk12,rcvAdj,%x
+37,161,C0308 df,chk12,rcvPunch,%x
+37,162,C0309 df,chk12,mainTray,%x
+37,163,C0310 4000F:E %dH.
+37,164,C0311 df,exe,wait,dis_stpl
+37,165,C0312 df,exe,wait,en_stpl
+37,166,C0313 df,exe,run,dis_stpl
+37,167,C0314 df,exe,run,en_stpl
+37,168,C0315 df,type,%x,%x
+37,169,C0316 df,chkuni,%x
+37,170,C0317 df,chkuni,fin,%x
+37,171,C0318 df,chkuni,other,%x
+37,172,C0319 df,uni,[%d],0->%x
+37,173,C0320 df,uni,%x
+37,174,C0321 df,m240,%x
+37,175,C0322 df,m240,exit,%x
+37,176,C0323 df,m240,rdy,%x
+37,177,C0324 df,m240,%x[%x]%x
+37,178,C0325 df,m240,motor
+37,179,C0326 df,m240,clutch
+37,180,C0327 df,m240,undefine,%x
+37,181,C0328 df,m241,%x
+37,182,C0329 df,m241,exit,%x
+37,183,C0330 df,m241,rdy,%x
+37,184,C0331 df,m241,adjust,R,%x
+37,185,C0332 df,m246,%x
+37,186,C0333 df,m246,read
+37,187,C0334 df,m249,%x
+37,188,C0335 df,m249,pun,%x,bf,%x
+37,189,C0336 df,exe,mainte,%x,%x,%x
+37,190,C0337 df,exe,mainte,def
+37,191,C0338 df,exe,mainte,rdy
+37,192,C0339 df,adj,mainte,%x,%x,%x
+37,193,C0340 df,adj,mainte,%x-%x,W,%x,%x
+37,194,C0341 df,adj,mainte,%x-%x,R,%x,%x
+37,195,C0342 df,adj,mainte,%x-%x,W,[%d],%x,[%x],%x
+37,196,C0343 df,adj,mainte,%x-%x,R,[%d],%x,[%x],%x
+37,197,C0344 df,mainte,ini,%x,%x,%x
+37,198,C0345 OPTInit RANK,%d
+37,199,C0346 df,tmo
+37,200,C0347 df,tmo240
+37,201,C0348 df,tmo,other
+37,202,C0349 df,wBkEnd
+37,203,C0350 df,wBkEnd,%x
+37,204,C0351 df,wBkEnd,%d->[%d]
+37,205,C0352 df,wBkEnd,initAll
+37,206,C0353 CLR-REQ,%x
+37,207,C0354 df,wBkEnd,%x
+37,208,C0355 df,wBkEnd,rdy
+37,209,C0356 df,ver,next,bf
+37,210,C0357 df,ver,next,bfboot
+37,211,C0358 df,ver,saddle,none
+37,212,C0359 SDL:Ver---
+37,213,C0360 df,ver,next,punch
+37,214,C0361 df,ver,next,punchboot
+37,215,C0362 df,ver,punch,none
+37,216,C0363 PNC:Ver---
+37,217,C0364 df,ver,punch,mail
+37,218,C0365 df,ver,punch,mailboot
+37,219,C0366 df,ver,mail,none
+37,220,C0367 MLB:Ver---"
+37,221,C0368 df,ver,next,serial
+37,222,C0369 df,serial,none
+37,223,C0370 df,ver,serial,end
+37,224,C0371 df,ver->rdy,cntR,mTry,pncBr,rAdj
+37,225,C0372 df,ver,mainLess
+37,226,C0373 df,rcvCnt,%x,%x
+37,227,C0374 df,rcvCnt,[0x%x],%x
+37,228,C0375 df,rcvCnt,[%x],%x==%x
+37,229,C0376 4000F:W-R%d=%d.
+37,230,C0377 df,rcvAdj,%x,%x
+37,231,C0378 df,rcvAdj,[0x%x],%x
+37,232,C0379 df,rcvAdj,[%x],%x<-%x
+37,233,C0380 df,rcvPunch
+37,234,C0381 df,rcvPunch,nfy,%x,%x
+37,235,C0382 4000F:CNT-W %d=%d.
+37,236,C0383 df,chkAccBk,cntClr,exec
+37,237,C0384 df,chkAccBk,mstpl,[%d],%d!=%d
+37,238,C0385 df,chkAccBk,rMainTray
+37,239,C0386 df,chkAccBk,rPunchBr
+37,240,C0387 df,chkAccBk,wMainTray
+37,241,C0388 df,chkAccBk,wPunchBr,%x
+37,242,C0389 df,chkAccBk,eq
+37,243,C0390 df,chkAccBk,cntR
+37,244,C0391 df,chkAccBk,cntClr,%d
+37,245,C0392 df,chkAccBk,rAdj
+37,246,C0393 df,chkAccBk,wAdj,%x
+37,247,C0394 df,1,[%x]%x,%x
+37,248,C0395 df,chkAccBk,wAdj,0
+37,249,C0396 df,chkAccBk,wAdj2,%x
+37,250,C0397 df,2,[%x]%x,%x
+37,251,C0398 df,chkAccBk,wAdj2,0
+37,252,C0399 df,chkAccBk,wAdj3,%x
+37,253,C0400 df,3,[%x]%x,%x
+37,254,C0401 df,chkAccBk,wAdj3,0
+37,255,C0402 df,chkAccBk,rStaple
+37,256,C0403 df,chkAccBk,wStaple
+37,257,C0404 df,chkAccBk,req,%x,%x
+37,258,C0405 df,chkEve,%x,1
+37,259,C0406 df,updDetach,%d
+37,260,C0407 df,cus,machine,%x
+37,261,C0408 df,firmType,%x,%d
+37,262,C0409 df,cus,isBkID,%x,%x,%d
+37,263,C0410 df,cus,isBkID,%x,0
+37,264,C0411 df,cus,isMainte,1,%x,%x
+37,265,C0412 df,cus,isMainte,0,%x,%x
+37,266,C0413 df,cus,905,%x
+37,267,C0414 df,rcvStaple,%x
+37,268,C0415 df,rcvStpl[0x%x],%x
+37,269,C0416 df,rcvStpl,[%x],%x==%x
+37,270,C0417 df,mspd,%d
+37,271,C0418 df,chkHld,hld:%d fin:%d stpl:%d mstpl:%d
+37,272,C0419 Call FUNCShiftIF::updateBundleOut.(pageId = %d, data = 0x%x)
+37,273,C0420 Call FUNCShiftIF::executeEvent.(event = %ld)
+37,274,C0421 Call FUNCShiftIF::change.(event = %hd, prtCtlInfo = %ld)
+37,275,C0422 command:emergency stop,%d
+37,276,C0423 command:standby,%x
+37,277,C0424 3PC,chk2,Huni,%x->%x
+37,278,C0425 3PC,m247,con
+37,279,C0426 3PC,m247,sub
+37,280,C0427 3PC,m247,%x,%x,%x
+37,281,C0428 initComFlag %d
+37,282,C0440 initialConnectRetry %d
+37,283,C0441 equipStatusRetry %d
+37,284,C0442 equipStatusWait %d
+38,1,C0429 <<Memory Dump>> start adrs:0x%08X, size:%ld(byte)
+38,2,C0430             +0+1 +2+3 +4+5 +6+7 +8+9 +A+B +C+D +E+F    0123456789ABCDEF
+38,3,C0431 0x%04X%04X: %04X %04X %04X %04X %04X %04X %04X %04X
+38,4,C0432 Buffer Use (UseMax/Capacity) %d/%d
+38,5,C0433 DBG_INFO regId:%02d Sta:%d devId:%02d type:%02d wait:%d now:%d Param:%d
+38,6,C0434 Sensor %d Fix %d
+38,7,C0435 Buffer Use (UseMax/Capacity) %d/%d
+38,8,C0436 Wait regId:%02d Sta:%d evtId:%02d wait:0x%x data:0x%x Param:%d
+38,9,C0437 Sts%03d=0x%x
+38,10,C0438 DBG_INFO seqId:%03d Sta:%d pri:%d type:%d client:%02d sce:%03d point:%02d epi:%02d sub:%02d monSub:%02d monTmId:%02d monEvmId:%02d monEvmTmId:%02d
+38,11,C0439 DBG_INFO regId:%02d Sta:%d Tim:%d Param:%d
+// Core_end
+// Custom_start
+0,25,M0001 %d %d %d
+0,26,M0002 ActiveSpeed Type Irregular(%d)
+0,27,M0003 rtcReceive: ERR(rtcTime=%d)
+0,28,M0004 EXCHANGE MACHINE SPEED TYPE : %d PPM
+0,29,M0005 DEFAULT MACHINE SPEED TYPE
+0,30,M0006 [mtype] "0":[help], "%d":[%d ppm], "%d":[%d ppm], "Other":[default ppm]
+0,31,M0007 %04hd,%08lx
+0,32,M0008 --priority%d--
+0,33,M0009 tmCnt=%04x
+0,34,M0010 -REGADR-  +0 +1 +2 +3 +4 +5 +6 +7
+0,35,M0011 0x%04x %02x %02x %02x %02x %02x %02x %02x %02x
+1,6,M0012 ---JAM OPT eventId:%hx, jamPos:%lx, trigger:%hx
+1,7,M0013 SCTLMH_detectOptionUnit,%lx,%hx
+1,8,M0014 !_SCTLMH_Staple_no_info,%hd
+1,9,M2026 Dp ChangeState %d -> %d
+2,35,M0015 SeqLockJamInfo JAM%hx pageId:%d standbyReply:%hx standbyReady:%hx startReady:%hx chkStartReady:%hx createComplete:%hx finishReady:%hx
+2,36,M2270 SeqLockJamInfo JAM%hx pageId:%d
+2,37,M2271 SeqLockJamInfo pageId:%d standbyReply:%hx standbyReady:%hx startReady:%hx chkStartReady:%hx verifyReady:%hx chkVerifyReady:%hx createComplete:%hx finishReady:%hx
+3,40,M0016 dummy message
+3,41,M0017 drv(%d) exec...onOff=%d, option1=%d, option2=%d, option3=%d, devID=%d
+3,44,M0018 ユーザ切替：machineType = %d 　0はユーザ指定無し
+3,45,M0019 ソフト認識機械タイプ：machineType = %d
+3,46,M0020 Waste Toner Box Full
+3,47,M0021 Tray Full
+3,48,M0022 JAM
+3,49,M0023 C-Call
+3,50,M0024 Finisher Joint Error
+3,51,M0025 Waste Toner Box Error
+3,52,M0026 Toner Empty (K)
+3,53,M0027 Toner Empty (C)
+3,54,M0028 Toner Empty (M)
+3,55,M0029 Toner Empty (Y)
+3,56,M0030 System Error
+3,57,M0031 Unset Waste Toner Box
+3,58,M0032 Unset TransferBelt Waste Toner Box
+3,59,M0033 Unset Toner Container (K)
+3,60,M0034 Unset Toner Container (C)
+3,61,M0035 Unset Toner Container (M)
+3,62,M0036 Unset Toner Container (Y)
+3,63,M0037 Engine Sleep
+3,64,M0038 Option Connecting
+3,65,M0039 Maintenance Mode
+3,66,M0040 Toner Install
+3,67,M0041 Drum Refresh
+3,68,M0042 Engine Warm-up
+3,69,M0043 Engine Initialize
+3,70,M0044 Alarm
+3,71,M0045 INITIAL
+3,72,M0046 WARMUP
+3,73,M0047 STANDBY
+3,74,M0048 RUN
+3,75,M0049 ALERT
+3,76,M0050 ERROR
+3,77,M0051 ADJUST
+3,78,M0052 SLEEP
+3,80,M0053 Any Cover Open
+3,81,M0054 sts30:0x%x sts31:0x%x sts32:0x%x sts33:0x%x
+3,82,M0055 CassetteLifting
+3,83,M0056 Cass1
+3,84,M0057 Cass2
+3,85,M0058 Cass3
+3,86,M0059 Cass4
+3,87,M0060 Cass5
+3,88,M0061 MPF
+3,89,M0062  →AddPaper
+3,90,M0063  →none
+3,91,M0064  →exist
+3,92,M0065  →break
+3,93,M0066  →error
+3,95,M0067 Engine Sleep
+3,96,M0068 C-Call:%x Rank:%d rebootRank:%d breakTarget:%d
+3,97,M2077 Engine Break sts174:%d BkupSts.breakEngine:%d (0x%x)
+3,98,M0069 JAMTrg:%x
+3,99,M0070 JAMPos:%x
+3,101,M0071 -----------------------------
+3,104,M0072 ri2c devNo, addr, size
+3,105,M0073 [devNo]
+3,106,M0074  1.DEVELOP-K E2P
+3,107,M0075  2.DRUM-K E2P
+3,108,M0076  3.FERAM
+3,109,M0077  4.THERMOPILE
+3,110,M0078  5.SUB
+3,111,M0079  6.ENGINE E2P
+3,113,M0080 wi2c devNo, addr, value, size
+3,114,M0081 [devNo]
+3,115,M0082  1.DEVELOP-K E2P
+3,116,M0083  2.DRUM-K E2P
+3,117,M0084  3.FERAM
+3,118,M0085  4.THERMOPILE
+3,119,M0086  5.SUB
+3,120,M0087  6.ENGINE E2P
+3,122,M0088 snSet clear %ld
+3,124,M0089     ,  PA,  PB,  PC,  PD,  PE,  PF,  PG,  PH
+3,125,M0090     ,  --,  PJ,  PK,  PL,  PM,  PN,  PO,  --
+3,126,M0091     ,  %04x,%04x,%04x,%04x,%04x,%04x,%04x,%04x
+3,128,M0092 dbPortOutTest: ERR(bitNo=%d)
+3,129,M0093 dbPortOutTest: ERR(value=%d)
+3,130,M0094 dbPortOutTest: ERR(portNo=%d)
+3,131,M0095 Param2: portNo(1:A,2:B,3:C,4:D,5:E,6:F,7:G,8:H,10:J,11:K,12:L,13:M,14:N)
+3,132,M0096 Param3: bitNo (0-15)
+3,133,M0097 Param4: value (0or1)
+3,134,M0098 portNo:%2d, bit:%2d, value:%2d, time:%6d
+3,136,M0099 seq <clientid> <scenarioid> <startPosition> <param>
+3,137,M0100 client        :%d
+3,138,M0101 scenario      :%d
+3,139,M0102 startPosition :%d
+3,140,M0103 param         :%d
+3,142,M0104 [dbScenario] Err: dbRecWordCount=%d
+3,143,M0105 [dbScenario] Cmd=0x%04x
+3,144,M0106 [dbScenario] Param(%d)=0x%02x
+3,146,M0107 I2C Write devNo:0x%x addr:0x%x data:0x%x
+3,149,M0108         +0+1 +2+3 +4+5 +6+7 +8+9 +a+b +c+d +e+f
+3,150,M0109 0x%04X: %04X %04X %04X %04X %04X %04X %04X %04X
+3,151,M0110 [Log Level List]
+3,152,M0111 Usage: chglvl [log group id] [new log level]
+3,153,M0112 Initialize Backup
+3,156,M0113 thermoPile_a: [%d]
+3,157,M0114 thermoPile_b: [%d]
+3,158,M0115 thermoPile_c: [%d]
+3,159,M0116 thermoPile_d: [%d]
+3,160,M0117 thermoPile_e: [%d]
+3,161,M0118 thermoPile_f: [%d]
+3,162,M0119 thermoPile_g: [%d]
+3,163,M0120 thermoPile_h: [%d]
+3,164,M0121 thermoPile_i: [%d]
+3,165,M0122 thermoPile_j: [%d]
+3,166,M0123 thermoPile_k: [%d]
+3,167,M0124 thermoPile_l: [%d]
+3,168,M0125 thermoPile_Beta: [%d]
+3,170,M0126 calibLog
+3,171,M0127  LP,   LS,   RP,   RS
+3,172,M0128 %04d, %04d, %04d, %04d
+3,173,M0129 fixlog
+3,174,M0130 %02x %02x %04x
+3,175,M0131 %08x
+3,176,M0132 %02x %02x %02x %02x %02x %02x
+3,177,M0133 idSensorAdj [%d] 1:OK 0:NG
+3,178,M0134 Vref %d %d
+3,179,M0135 BiasCalib [%d] 1:OK 0:NG
+3,180,M0136 Vdc Y:%d C:%d M:%d K:%d
+3,181,M0137 LPCalib [%d] 1:OK 0:NG
+3,182,M0138 LaserPower Y:%d C:%d M:%d K:%d
+3,183,M0139 LP_CTD %04d %04d
+3,184,M0140 BIAS_CTD %04d %04d
+3,185,M0141 IOCalib [%d] 1:OK 0:NG
+3,186,M0142 IO_CTD %04d %04d
+3,187,M0143 XYZ_rev %04d %04d
+3,188,M0144 SELECT_ISU
+3,189,M0145 SELECT_DP
+3,191,M0146  eIN1, eIN2, eIN3, eIN4
+3,192,M0147    %02x,   %02x,   %02x,   %02x
+3,193,M0148 eOUT1,eOUT2,eOUT3,eOUT4,eOUT5
+3,194,M0149    %02x,   %02x,   %02x,   %02x,   %02x
+3,196,M0150 dbExDevOutTest: ERR(bitNo=%d)
+3,197,M0151 dbExDevOutTest: ERR(value=%d)
+3,198,M0152 dbExDevOutTest: ERR(devNo=%d)
+3,199,M0153 Param2: devNo (1-5)
+3,200,M0154 Param3: bitNo (0-7)
+3,201,M0155 Param4: value (0or1)
+3,202,M0156 devNo:%2d, bit:%2d, value:%2d, time:%6d
+3,203,M0157 紙なしモード設定(%d => %d)
+3,205,M0158 ***** UNIT STATUS INFO *****
+3,206,M0159 帯電ローラカウンタ変更回数     : data[%02x]
+3,207,M0160 帯電データ                     : data[%02x]
+3,208,M0161 帯電電流データ                 : data[%02x]
+3,209,M0162 帯電データ(半速)               : data[%02x]
+3,210,M0163 帯電電流データ(半速)           : data[%02x]
+3,211,M0164 露光データ                     : data[%02x]
+3,212,M0165 暗電位データ                   : data[%02x]
+3,213,M0166 ドラムユニット識別             : data[%02x]
+3,214,M0167 ドラムユニット識別1            : data[K:%02x Y:%02x C:%02x M:%02x]
+3,215,M0168 治具内温度                     : data[K:%02x Y:%02x C:%02x M:%02x]
+3,216,M0169 治具内相対湿度                 : data[K:%02x Y:%02x C:%02x M:%02x]
+3,217,M0170 治具帯電印加電圧               : data[K:%02x Y:%02x C:%02x M:%02x]
+3,218,M0171 治具センター暗電位データ(下位) : data[K:%02x Y:%02x C:%02x M:%02x]
+3,219,M0172 治具センター暗電位データ(上位) : data[K:%02x Y:%02x C:%02x M:%02x]
+3,220,M0173 DSギャップデータ P1(ave,max,min) : data[K:(%02x %02x %02x), Y:(%02x %02x %02x), C:(%02x %02x %02x), M:(%02x %02x %02x)]
+3,221,M0174 DSギャップデータ P2(ave,max,min) : data[K:(%02x %02x %02x), Y:(%02x %02x %02x), C:(%02x %02x %02x), M:(%02x %02x %02x)]
+3,222,M0175 DSギャップデータ P3(ave,max,min) : data[K:(%02x %02x %02x), Y:(%02x %02x %02x), C:(%02x %02x %02x), M:(%02x %02x %02x)]
+3,223,M0176 T/Cセンサ出力値(Hi, Lo)        : data[K:(%02x %02x), Y:(%02x %02x), C:(%02x %02x), M:(%02x %02x)]
+3,224,M0177 現像器ユニット識別             : data[%02x]
+3,225,M0178 現像器ユニット識別             : data[K:%02x Y:%02x C:%02x M:%02x]
+3,226,M0179 現像器イニシャルコード         : data[K:%02x Y:%02x C:%02x M:%02x]
+3,227,M0180 転写ベルトユニット識別         : data[%02x]
+3,228,M0181 定着ユニット識別               : data[%02x]
+3,229,M0182 ドラムユニットシリアル(Bk)     : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,230,M0183 ドラムユニットシリアル(1st)    : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,231,M0184 ドラムユニットシリアル(2nd)    : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,232,M0185 ドラムユニットシリアル(3rd)    : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,233,M0186 現像ユニットシリアル(Bk)       : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,234,M0187 現像ユニットシリアル(1st)      : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,235,M0188 現像ユニットシリアル(2nd)      : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,236,M0189 現像ユニットシリアル(3rd)      : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,237,M0190 転ベルユニットシリアル         : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,238,M0191 定着ユニットシリアル           : data[%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x]
+3,240,M0192 ***** COUNTER *****
+3,241,M0193 total count            : data[%d] add[0x%x]
+3,242,M0194 mac life count         : data[%d] add[0x%x]
+3,243,M0195 mpf count              : data[%d] add[0x%x]
+3,244,M0196 cass1 count            : data[%d] add[0x%x]
+3,245,M0197 cass2 count            : data[%d] add[0x%x]
+3,246,M0198 cass3 count            : data[%d] add[0x%x]
+3,247,M0199 duplex count           : data[%d] add[0x%x]
+3,248,M0200 drum count(bk)         : data[%d] add[0x%x]
+3,249,M0201 drum distance(bk)      : data[%d] add[0x%x]
+3,250,M0202 drum count(y)          : data[%d] add[0x%x]
+3,251,M0203 drum distance(y)       : data[%d] add[0x%x]
+3,252,M0204 drum count(m)          : data[%d] add[0x%x]
+3,253,M0205 drum distance(m)       : data[%d] add[0x%x]
+3,254,M0206 drum count(c)          : data[%d] add[0x%x]
+3,255,M0207 drum distance(c)       : data[%d] add[0x%x]
+3,256,M0208 dlp count(bk)          : data[%d] add[0x%x]
+3,257,M0209 dlp drvtm(bk)          : data[%d] add[0x%x]
+3,258,M0210 dlp count(y)           : data[%d] add[0x%x]
+3,259,M0211 dlp drvtm(y)           : data[%d] add[0x%x]
+3,260,M0212 dlp count(m)           : data[%d] add[0x%x]
+3,261,M0213 dlp drvtm(m)           : data[%d] add[0x%x]
+3,262,M0214 dlp count(c)           : data[%d] add[0x%x]
+3,263,M0215 dlp drvtm(c)           : data[%d] add[0x%x]
+3,264,M0216 sec trans count        : data[%d] add[0x%x]
+3,265,M0217 fuser count            : data[%d] add[0x%x]
+3,266,M0218 mc on time(bk)         : data[%d] add[0x%x]
+3,267,M0219 mc on time(y)          : data[%d] add[0x%x]
+3,268,M0220 mc on time(m)          : data[%d] add[0x%x]
+3,269,M0221 mc on time(c)          : data[%d] add[0x%x]
+3,270,M0222 mc on distance(bk)     : data[%d] add[0x%x]
+3,271,M0223 mc on distance(y)      : data[%d] add[0x%x]
+3,272,M0224 mc on distance(m)      : data[%d] add[0x%x]
+3,273,M0225 mc on distance(c)      : data[%d] add[0x%x]
+3,274,M0226 total pr rate(bk)      : data[%d] add[0x%x]
+3,275,M0227 total pr rate(y)       : data[%d] add[0x%x]
+3,276,M0228 total pr rate(m)       : data[%d] add[0x%x]
+3,277,M0229 total pr rate(c)       : data[%d] add[0x%x]
+3,278,M0230 trans belt count       : data[%d] add[0x%x]
+3,279,M0231 trans belt drvtm       : data[%d] add[0x%x]
+3,280,M0232 fuser press tm         : data[%d] add[0x%x]
+3,281,M0233 fuser release tm       : data[%d] add[0x%x]
+3,282,M0234 staple count           : data[%d] add[0x%x]
+3,283,M0235 sorter count           : data[%d] add[0x%x]
+3,284,M0236 mac life count(col)    : data[%d] add[0x%x]
+3,285,M0237 mc roller count(bk)    : data[%d] add[0x%x]
+3,286,M0238 mc roller count(y)     : data[%d] add[0x%x]
+3,287,M0239 mc roller count(m)     : data[%d] add[0x%x]
+3,288,M0240 mc roller count(c)     : data[%d] add[0x%x]
+3,289,M0241 maintenance count(a)   : data[%d] add[0x%x]
+3,290,M0242 maintenance count(b)   : data[%d] add[0x%x]
+3,292,M0243 SET SC STS param2 %d time %08d
+3,294,M0244 (HANABI2 出力ドライバ一覧 ここから)
+3,295,M0245 No  device
+3,296,M0246 0   搬送/中間転写ベルトクリーニング/廃棄トナーモーター
+3,297,M0247 1   ドラムモーター(BK)
+3,298,M0248 2   ドラムモーター(COL)
+3,299,M0249 3   定着モーター
+3,300,M0250 4   中間転写/現像(BK)モーター
+3,301,M0251 5   現像モーター(COL)
+3,302,M0252 6   ポリゴンモーター(BK)
+3,303,M0253 7   ポリゴンモーター(COL)
+3,304,M0254 8   カセットリフトモーター
+3,305,M0255 9   トナー補給モーター(BK)
+3,306,M0256 10  トナー補給モーター(1ST)
+3,307,M0257 11  トナー補給モーター(2ND)
+3,308,M0258 12  トナー補給モーター(3RD)
+3,309,M0259 13  転写ベルト圧解除モーター
+3,310,M0260 14  IDセンサクリーニングモーター
+3,311,M0261 15  LSUクリーニングモーター
+3,312,M0262 16  現像器振動モーター
+3,313,M0263 17  定着圧解除モーター
+3,314,M0264 18  PFモーター
+3,315,M0265 19  ブリッジ搬送モーター
+3,316,M0266 20  排出モーター
+3,317,M0267 21  給紙クラッチ
+3,318,M0268 22  カセット2給紙クラッチ
+3,319,M0269 23  カセット3給紙クラッチ
+3,320,M0270 24  カセット2搬送クラッチ
+3,321,M0271 25  カセット3搬送クラッチ
+3,322,M0272 26  レジストクラッチ
+3,323,M0273 27  中間クラッチ
+3,324,M0274 28  両面再給紙クラッチ
+3,325,M0275 29  現像クラッチ
+3,326,M0276 30  MPF給紙ソレノイド
+3,327,M0277 31  排出口切替ソレノイド
+3,328,M0278 32  IH基板、コンテナ冷却ファン
+3,329,M0279 33  LSU、DLP冷却ファン
+3,330,M0280 34  作像、LVU冷却ファン
+3,331,M0281 35  汚染対策ファン
+3,332,M0282 36  定着冷却ファン
+3,333,M0283 37  中間転写ベルトファン
+3,334,M0284 38  予備FAN1制御
+3,335,M0285 39  予備FAN2制御
+3,336,M0286 40  除電リモート(BK)
+3,337,M0287 41  除電リモート(COL)
+3,338,M0288 42  帯電バイアス(BK)
+3,339,M0289 43  帯電バイアス(1ST)
+3,340,M0290 44  帯電バイアス(2ND)
+3,341,M0291 45  帯電バイアス(3RD)
+3,342,M0292 46  VSYNC
+3,343,M0293 47  現像クロック
+3,344,M0294 48  現像バイアスAC Vslv(BK)
+3,345,M0295 49  現像バイアスAC Vslv(1ST)
+3,346,M0296 50  現像バイアスAC Vslv(2ND)
+3,347,M0297 51  現像バイアスAC Vslv(3RD)
+3,348,M0298 52  現像バイアスDC Vmag(BK)
+3,349,M0299 53  現像バイアスDC Vmag(1ST)
+3,350,M0300 54  現像バイアスDC Vmag(2ND)
+3,351,M0301 55  現像バイアスDC Vmag(3RD)
+3,352,M0302 56  現像バイアスDC Vslv(BK)
+3,353,M0303 57  現像バイアスDC Vslv(1ST)
+3,354,M0304 58  現像バイアスDC Vslv(2ND)
+3,355,M0305 59  現像バイアスDC Vslv(3RD)
+3,356,M0306 60  中間転写コントロール(BK)
+3,357,M0307 61  中間転写コントロール(1ST)
+3,358,M0308 62  中間転写コントロール(2ND)
+3,359,M0309 63  中間転写コントロール(3RD)
+3,360,M0310 64  用紙転写コントロール
+3,361,M0311 65  分離リモート
+3,362,M0312 66  クリーニングコントロール
+3,363,M0313 67  高圧リモート
+3,364,M0314 68  定着リレー
+3,365,M0315 69  オプションポーズ
+3,366,M0316 70  廃棄トナーボトルエラー検知LEDリモート
+3,367,M0317 71  定着暴走検知クロック
+3,368,M0318 72  トータルカウンターパルス
+3,369,M0319 73  IDセンサ光量設定(フロント)
+3,370,M0320 74  IDセンサ光量設定(リア)
+3,371,M0321 75  IDセンサ2値化基準設定(フロント)
+3,372,M0322 76  IDセンサ2値化基準設定(リア)
+3,373,M0323 77  内部VSYNC(1ST)(仮想)
+3,374,M0324 78  内部VSYNC(2ND)(仮想)
+3,375,M0325 79  内部VSYNC(3RD)(仮想)
+3,376,M0326 80  内部VSYNC(4TH)(仮想)
+3,377,M0327 81  定着ヒーターリモート(メイン)
+3,378,M0328 82  定着ヒーターリモート(サブ)
+3,379,M0329 83  低圧冷却ファン
+3,381,M0330 (HANABI2 センサー一覧 ここから)
+3,382,M0331 %2d, %4d: 定着搬送センサー
+3,383,M0332 %2d, %4d: 両面搬送センサー
+3,384,M0333 %2d, %4d: レジストセンサー
+3,385,M0334 %2d, %4d: 転写後用紙センサー
+3,386,M0335 %2d, %4d: 縦搬送センサー
+3,387,M0336 %2d, %4d: PF搬送センサー(上)
+3,388,M0337 %2d, %4d: PF搬送センサー(下)
+3,389,M0338 %2d, %4d: ブリッジ搬入センサー
+3,390,M0339 %2d, %4d: ブリッジ搬送センサー
+3,391,M0340 %2d, %4d: ブリッジ排出センサー
+3,392,M0341 %2d, %4d: 用紙残量検知(MPF)
+3,393,M0342 %2d, %4d: 用紙残量検知(カセット1)
+3,394,M0343 %2d, %4d: 用紙残量検知(カセット2)
+3,395,M0344 %2d, %4d: 用紙残量検知(カセット3)
+3,396,M0345 %2d, %4d: カセットサイズ検知(MPF)
+3,397,M0346 %2d, %4d: カセットサイズ検知(カセット1)
+3,398,M0347 %2d, %4d: カセットサイズ検知(カセット2)
+3,399,M0348 %2d, %4d: カセットサイズ検知(カセット3)
+3,400,M0349 %2d, %4d: カセット挿入検知(カセット1)
+3,401,M0350 %2d, %4d: カセット挿入検知(カセット2)
+3,402,M0351 %2d, %4d: カセット挿入検知(カセット3)
+3,403,M0352 %2d, %4d: 用紙有無検知(MPF)
+3,404,M0353 %2d, %4d: 用紙有無検知(カセット1)
+3,405,M0354 %2d, %4d: 用紙有無検知(カセット2)
+3,406,M0355 %2d, %4d: 用紙有無検知(カセット3)
+3,407,M0356 %2d, %4d: リフト上限検知(カセット1)
+3,408,M0357 %2d, %4d: 排紙積載フル検知(上)
+3,409,M0358 %2d, %4d: 排紙積載フル検知(下)
+3,410,M0359 %2d, %4d: 廃トナー満杯検知
+3,411,M0360 %2d, %4d: フロントカバー開検知
+3,412,M0361 %2d, %4d: サイドカバー開検知
+3,413,M0362 %2d, %4d: PFカバー開検知
+3,414,M0363 %2d, %4d: ブリッジカバー開検知
+3,415,M0364 %2d, %4d: DFトップカバー開検知
+3,416,M0365 %2d, %4d: DFステープルカバー開検知
+3,417,M0366 %2d, %4d: DP開検知
+3,418,M0367 %2d, %4d: TABLE開検知
+3,419,M0368 %2d, %4d: 高温異常検知
+3,420,M0369 %2d, %4d: ブリッジ接続検知
+3,421,M0370 %2d, %4d: トータルカウンター接続検知
+3,422,M0371 %2d, %4d: 24V Down検知
+3,423,M0372 %2d, %4d: プリントホールド識別
+3,424,M0373 %2d, %4d: スキャンホールド識別
+3,425,M0374 %2d, %4d: 起動識別
+3,426,M0375 %2d, %4d: 基板バージョン識別
+3,427,M0376 %2d, %4d: 定着モーターReady
+3,428,M0377 %2d, %4d: 搬送モーターReady
+3,429,M0378 %2d, %4d: ドラムモーターReady(BK)
+3,430,M0379 %2d, %4d: ドラムモーターReady(COL)
+3,431,M0380 %2d, %4d: 転写ベルトモーターReady
+3,432,M0381 %2d, %4d: 現像モーターReady(COL)
+3,433,M0382 %2d, %4d: ポリゴンモーターReady(BK)
+3,434,M0383 %2d, %4d: ポリゴンモーターReady(1ST)
+3,435,M0384 %2d, %4d: ポリゴンモーターReady(2ND)
+3,436,M0385 %2d, %4d: ポリゴンモーターReady(3RD)
+3,437,M0386 %2d, %4d: IDセンサークリーニングモーター 動作状態
+3,438,M0387 %2d, %4d: LSUクリーニングモーター 動作状態
+3,439,M0388 %2d, %4d: 転写ベルト圧解除モーター 動作状態
+3,440,M0389 %2d, %4d: 定着圧解除モーター 動作状態
+3,441,M0390 %2d, %4d: リフトモーター 動作状態
+3,442,M0391 %2d, %4d: トナーモーター 動作状態
+3,443,M0392 %2d, %4d: IDセンサークリーニングモーターHP検知
+3,444,M0393 %2d, %4d: IH PCBファンロック検知
+3,445,M0394 %2d, %4d: コンテナファンロック検知
+3,446,M0395 %2d, %4d: 低圧冷却ファンロック検知
+3,447,M0396 %2d, %4d: 定着圧解除検知
+3,448,M0397 %2d, %4d: 定着ベルト回転検知(フロント)
+3,449,M0398 %2d, %4d: 定着ベルト回転検知(リア)
+3,450,M0399 %2d, %4d: 定着ベルト異常検知(フロント)
+3,451,M0400 %2d, %4d: 定着ベルト異常検知(リア)
+3,452,M0401 %2d, %4d: IH異常通知検知
+3,453,M0402 %2d, %4d: 定着中央温度
+3,454,M0403 %2d, %4d: 定着中間温度
+3,455,M0404 %2d, %4d: 定着端部温度
+3,456,M0405 %2d, %4d: 定着プレス温度
+3,457,M0406 %2d, %4d: 絶対湿度
+3,458,M0407 %2d, %4d: 相対湿度
+3,459,M0408 %2d, %4d: 機内温度(現像サーミスタ)
+3,460,M0409 %2d, %4d: 機内温度(コンテナサーミスタ)
+3,461,M0410 %2d, %4d: 機内温度(LSU1サーミスタ)
+3,462,M0411 %2d, %4d: 機内温度(LSU2サーミスタ)
+3,463,M0412 %2d, %4d: 機外温度
+3,464,M0413 %2d, %4d: TPCセンサ(BK)
+3,465,M0414 %2d, %4d: TPCセンサ(1ST)
+3,466,M0415 %2d, %4d: TPCセンサ(2ND)
+3,467,M0416 %2d, %4d: TPCセンサ(3RD)
+3,468,M0417 %2d, %4d: IDセンサ(フロント P波)
+3,469,M0418 %2d, %4d: IDセンサ(フロント S波)
+3,470,M0419 %2d, %4d: IDセンサ(リア P波)
+3,471,M0420 %2d, %4d: IDセンサ(リア S波)
+3,472,M0421 %2d, %4d: 帯電流れ込み電流AD値
+3,473,M0422 %2d, %4d: VSYNCエッジ(1ST)(仮想)
+3,474,M0423 %2d, %4d: VSYNCエッジ(2ND)(仮想)
+3,475,M0424 %2d, %4d: VSYNCエッジ(3RD)(仮想)
+3,476,M0425 %2d, %4d: VSYNCエッジ(4TH)(仮想)
+3,477,M0426 (HANABI2センサー一覧 ここまで)
+3,479,M0427 ri2c devNo, addr, size
+3,480,M0428 wi2c devNo, addr, value, size
+3,481,M0429 [devNo]
+3,482,M0430  1 .DEVELOP-K E2P
+3,483,M0431  2 .DEVELOP-1ST E2P
+3,484,M0432  3 .DEVELOP-2ND E2P
+3,485,M0433  4 .DEVELOP-3RD E2P
+3,486,M0434  5 .DRUM-K E2P
+3,487,M0435  6 .DRUM-1ST E2P
+3,488,M0436  7 .DRUM-2ND E2P
+3,489,M0437  8 .DRUM-3RD E2P
+3,490,M0438  9 .FERAM
+3,491,M0439  10.SUB
+3,492,M0440  11.TRANS BELT
+3,493,M0441  12.FUSER E2P
+3,494,M0442  13.ENGINE E2P
+3,495,M0443  14.ASIC MONACO
+3,497,M0444 [General Port]
+3,498,M0445 (PORT-%c) REG: 0x%04x
+3,501,M0446  0. AIN1/SEL0 帯電電流モニタ       : %d(12bit)/%d(8bit)
+3,502,M0447  1. AIN2/SEL0 廃トナー満杯検知     : %d(12bit)/%d(8bit)
+3,503,M0448  2. AIN3/SEL0 TPCセンサ_BK         : %d(12bit)/%d(8bit)
+3,504,M0449  3. AIN4/SEL0 TPCセンサ_3RD        : %d(12bit)/%d(8bit)
+3,505,M0450  4. AIN5/SEL0 TPCセンサ_2ND        : %d(12bit)/%d(8bit)
+3,506,M0451  5. AIN6/SEL0 TPCセンサ_1ST        : %d(12bit)/%d(8bit)
+3,507,M0452  6. AIN1/SEL1 機外湿度センサ       : %d(12bit)/%d(8bit)
+3,508,M0453  7. AIN2/SEL1 機外温度サーミスタ   : %d(12bit)/%d(8bit)
+3,509,M0454  8. AIN3/SEL1 機内温度_コンテナ    : %d(12bit)/%d(8bit)
+3,510,M0455  9. AIN4/SEL1 機内温度_現像温度    : %d(12bit)/%d(8bit)
+3,511,M0456 10. AIN5/SEL1 機内温度_LSU1        : %d(12bit)/%d(8bit)
+3,512,M0457 11. AIN6/SEL1 機内温度_LSU2        : %d(12bit)/%d(8bit)
+3,513,M0458 12. AIN7      IDセンサ_F_P波       : %d(12bit)/%d(8bit)
+3,514,M0459 13. AIN8      IDセンサ_F_S波       : %d(12bit)/%d(8bit)
+3,515,M0460 14. AIN9      IDセンサ_R_P波       : %d(12bit)/%d(8bit)
+3,516,M0461 15. AIN10     IDセンサ_R_S波       : %d(12bit)/%d(8bit)
+3,517,M0462 16. AIN11     定着中央サーミスタ   : %d(12bit)/%d(8bit)
+3,518,M0463 17. AIN12     定着端部サーミスタ   : %d(12bit)/%d(8bit)
+3,519,M0464 18. AIN13     定着中間サーミスタ   : %d(12bit)/%d(8bit)
+3,520,M0465 19. AIN14     定着プレスサーミスタ : %d(12bit)/%d(8bit)
+3,522,M0466 [無視デバイス設定]
+3,523,M0467  1. 現像ユニット   [%c%c%c]
+3,524,M0468 update device%d ==> %c%c%c
+3,526,M0469 ### Stack Status ###
+3,527,M0470 taskID       remain/total  stack area address
+3,528,M0471 00:intstk    %04d/%04d     %08x-%08x
+3,529,M0472 00:intstk    OVER/%04d     %08x-%08x   warning!!!
+3,530,M0473 46  現像冷却ファン
+3,532,M0474 (TOMCAT3 出力ドライバ一覧 ここから)
+3,533,M0475 No  device
+3,534,M0476 (TOMCAT3センサー一覧 ここから)
+3,535,M0477 (TOMCAT3センサー一覧 ここまで)
+3,536,M0478  0. AIN5  MPF用紙サイズ幅       : %d(12bit)/%d(8bit)
+3,537,M0479  1. AIN6  廃Toner満杯検知       : %d(12bit)/%d(8bit)
+3,538,M0480  2. AIN7  現像サーミスタ        : %d(12bit)/%d(8bit)
+3,539,M0481  3. AIN8  機外湿度センサ        : %d(12bit)/%d(8bit)
+3,540,M0482  4. AIN9  機外温度サーミスタ    : %d(12bit)/%d(8bit)
+3,541,M0483  5. AIN10 定着サーモパイル 温度 : %d(12bit)/%d(8bit)
+3,542,M0484  6. AIN11 定着サーモパイル 出力 : %d(12bit)/%d(8bit)
+3,543,M0485  8. AIN13 定着端部サーミスタ    : %d(12bit)/%d(8bit)
+3,544,M0486  9. AIN14 帯電電流モニタ        : %d(12bit)/%d(8bit)
+3,545,M0487 KSS:BufFull dev:%d clt:%d
+3,546,M0488 KSS:I2CBufFull dev:%d clt:%d
+3,547,M0489 KSS:errRequestQueOver:%d %d
+3,548,M0490 KSS:Err %d Retry %d
+3,553,M0491 [Software Version Information]
+3,554,M0492 Engine Boot: %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,555,M0493 Engine Main: %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,556,M0494 PF Boot    : %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,557,M0495 PF Main    : %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,558,M0496 DF Boot    : %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,559,M0497 DF Main    : %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,560,M0498 AK Boot    : %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,561,M0499 AK Main    : %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,562,M0500 DP Boot    : %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,563,M0501 DP Main    : %c%c%c_%c%c%c%c.%c%c%c.%c%c%c
+3,565,M0502 Len=%2d
+3,566,M0503 Code=%02x
+3,567,M0504 %02x
+3,568,M0505 Not 2ndRes
+3,569,M0506 Len1=%2d
+3,570,M0507 Code1=%02x
+3,571,M0508 Send Over
+3,572,M0509 GetResponse
+3,573,M0510 SendCommand
+3,574,M0511 ret=%04x
+3,577,M0512 1:カウント処理:Engine　バックアップ位置：Engine
+3,578,M0513 [%ld]:トータルカウンタ
+3,579,M0514 [%ld]:機械ライフカウンタ
+3,580,M0515 [%ld]:MPT給紙カウンタ
+3,581,M0516 [%ld]:カセット1給紙カウンタ
+3,582,M0517 [%ld]:カセット2給紙カウンタ
+3,583,M0518 [%ld]:両面カウンタ
+3,584,M0519 [%ld]:定着カウンタ
+3,585,M0520 [%ld]:二次転写カウンタ
+3,586,M0521 [%ld]:定着駆動時間(離間)
+3,587,M0522 [%ld]:定着駆動時間(押圧)
+3,589,M0523 2:カウント処理:Engine　バックアップ位置：Unit
+3,590,M0524 [%ld]:ドラムカウンタ Black
+3,591,M0525 [%ld]:ドラム駆動時間カウンタ Black
+3,592,M0526 [%ld]:ドラム駆動距離カウンタ Black
+3,593,M0527 [%ld]:現像器カウンタ Black
+3,594,M0528 [%ld]:現像器駆動時間カウンタ Black
+3,595,M0529 [%ld]:帯電ローラカウンタ
+3,596,M0530 [%ld]:帯電ローラ帯電時間
+3,598,M0531 3:カウント処理:Enhance　バックアップ位置：Enhance
+3,599,M0532 [%ld]:カセット3給紙カウンタ
+3,600,M0533 [%ld]:カセット4給紙カウンタ
+3,601,M0534 [%ld]:Finisherメイントレイ排紙カウンタ
+3,602,M0535 [%ld]:ステープル綴じカウンタ
+3,603,M0536 [%ld]:ステープル綴じ(中央二個所綴じ)カウンタ
+3,604,M0537 [%ld]:パンチカウンタ
+3,605,M0538 [%ld]:中折りカウンタ
+3,606,M0539 [%ld]:三つ折りカウンタ
+3,607,M0540 [%ld]:ソータ通紙カウンタ
+3,609,M0541 4:カウント処理:Controller　バックアップ位置：Engine
+3,610,M0542 [%ld]:メンテナンスカウンタA
+3,611,M0543 [%ld]:コピースキャンカウンタ
+3,612,M0544 [%ld]:ファックススキャンカウンタ
+3,613,M0545 [%ld]:その他スキャンカウンタ
+3,614,M0546 [%ld]:印刷(片面) / 集約(なし)
+3,615,M0547 [%ld]:印刷(片面) / 集約(2in1)
+3,616,M0548 [%ld]:印刷(片面) / 集約(4in1)
+3,617,M0549 [%ld]:印刷(両面) / 集約(なし)
+3,618,M0550 [%ld]:印刷(両面) / 集約(2in1)
+3,619,M0551 [%ld]:印刷(両面) / 集約(4in1)
+3,620,M0552 [%ld]:モノクロコピーカウンタ Letter
+3,621,M0553 [%ld]:モノクロコピーカウンタ Legal
+3,622,M0554 [%ld]:モノクロコピーカウンタ A4
+3,623,M0555 [%ld]:モノクロコピーカウンタ B5
+3,624,M0556 [%ld]:モノクロコピーカウンタ A3
+3,625,M0557 [%ld]:モノクロコピーカウンタ B4
+3,626,M0558 [%ld]:モノクロコピーカウンタ Ledger
+3,627,M0559 [%ld]:モノクロコピーカウンタ A5
+3,628,M0560 [%ld]:モノクロコピーカウンタ Statement
+3,629,M0561 [%ld]:モノクロコピーカウンタ Folio
+3,630,M0562 [%ld]:モノクロコピーカウンタ Other Small
+3,631,M0563 [%ld]:モノクロコピーカウンタ Other Large
+3,632,M0564 [%ld]:モノクロファックスカウンタ Letter
+3,633,M0565 [%ld]:モノクロファックスカウンタ Legal
+3,634,M0566 [%ld]:モノクロファックスカウンタ A4
+3,635,M0567 [%ld]:モノクロファックスカウンタ B5
+3,636,M0568 [%ld]:モノクロファックスカウンタ A3
+3,637,M0569 [%ld]:モノクロファックスカウンタ B4
+3,638,M0570 [%ld]:モノクロファックスカウンタ Ledger
+3,639,M0571 [%ld]:モノクロファックスカウンタ A5
+3,640,M0572 [%ld]:モノクロファックスカウンタ Statement
+3,641,M0573 [%ld]:モノクロファックスカウンタ Folio
+3,642,M0574 [%ld]:モノクロファックスカウンタ Other Small
+3,643,M0575 [%ld]:モノクロファックスカウンタ Other Large
+3,644,M0576 [%ld]:モノクロプリンタカウンタ Letter
+3,645,M0577 [%ld]:モノクロプリンタカウンタ Legal
+3,646,M0578 [%ld]:モノクロプリンタカウンタ A4
+3,647,M0579 [%ld]:モノクロプリンタカウンタ B5
+3,648,M0580 [%ld]:モノクロプリンタカウンタ A3
+3,649,M0581 [%ld]:モノクロプリンタカウンタ B4
+3,650,M0582 [%ld]:モノクロプリンタカウンタ Ledger
+3,651,M0583 [%ld]:モノクロプリンタカウンタ A5
+3,652,M0584 [%ld]:モノクロプリンタカウンタ Statement
+3,653,M0585 [%ld]:モノクロプリンタカウンタ Folio
+3,654,M0586 [%ld]:モノクロプリンタカウンタ Other Small
+3,655,M0587 [%ld]:モノクロプリンタカウンタ Other Large
+3,656,M2001 %04x:%02x
+3,657,M2002 -ADR-   +0 +1 +2 +3 +4 +5 +6 +7
+3,658,M2003 0x%04x: %02x %02x %02x %02x %02x %02x %02x %02x
+3,659,M2004 asicr devNo, addr
+3,660,M2005 asicw devNo, addr, value
+3,661,M2006 asicd devNo
+3,662,M2007 [devNo]
+3,663,M2008  0x00:Hydra
+3,664,M2009  0x01:HerculesENGINE
+3,665,M2010  0x02:HerculesIMAGE
+3,666,M2011  0x03:HerculesDRIVE
+3,667,M2012  0x04:HerculesFRONT
+3,669,M2022 Main CPU I/O
+3,670,M2079 Port,  %04x,%04x,%04x,%04x,%04x,%04x,%04x,%04x
+3,671,M2080 Buff,  %04x,%04x,%04x,%04x,%04x,%04x,%04x,%04x
+3,673,M2081 Hercules%d I/O
+3,674,M2082     ,  PA,  PB,  PC,  PD,  PE,  PF,  PG,  PH,  AD
+3,675,M2083 Port,  %04x,%04x,%04x,%04x,%04x,%04x,%04x,%04x
+3,676,M2084 Buff,  %04x,%04x,%04x,%04x,%04x,%04x,%04x,%04x,%04x
+3,677,M2085 hio [1-6]:Hercules1-6.
+3,679,M2086 dbgHerucresPortOutTest: ERR(portNo=%d, bitNo=%d)
+3,680,M2087 when you cant find device in [hout],you can use this.
+3,681,M2088 hout [devNo] [portNo] [bitNo] [value].
+3,682,M2089 param2: devNo (1-6:Hercules1-6)
+3,683,M2090 param3: portNo (0-7:portA-H)
+3,684,M2091 param4: bitNo (0-7)
+3,685,M2092 param5: value (0or1)
+3,686,M2093 devNo:%2d, port:%2d, bit:%2d, value:%2d, time:%6d
+3,687,M2105 scn asic write log ON
+3,688,M2106 scn asic write log OFF
+3,689,M2107 scenarioID(ISU) :%d
+3,690,M2108 scenarioID(DP)  :%d
+4,16,M0588 brand%d
+4,17,M0589 brandErr
+4,18,M0590 Get Container Date Err Color Code%x
+4,19,M0591 setRepositoryData Err 0x%x
+4,20,M0592 JamInfo2 %hx
+4,21,M0593 \Undefined Unit Count Set Request%x %x
+4,22,M0594 \Undefined Unit Count Get Request%x %x
+4,23,M0595 \Undefined Unit Farmware Version Request%x %x
+4,24,M0596 Undefined Unit Serial Set%x
+4,25,M0597 Undefined Unit Serial Get%x
+4,26,M0598 Not Support Status Set Request No=%d mask=0x%x data=0x%x
+4,27,M0599 Not Support Queuing Status Send Request No=%d mask=0x%x data=0x%x
+4,28,M0600 Queuing Status Buffer Full No=%d data=0x%x
+4,29,M0601 Status Set No=%d data=0x%x -> 0x%x
+4,30,M0602 Send Buffer Overflow data=%d pos=%d
+4,31,M0603 Print Start Request
+4,32,M0604 Print ReStart Request
+4,33,M0605 Set Count Timing 0x%x %d
+4,34,M0606 Request Sleep 0x%02x (0:Ready, 2:Off Mode 3,4:Sleep: other:Not Support))(0x80:Ignore Request)
+4,35,M0607 Maintenance Read 0x%x 0x%x offset=%d
+4,36,M0608 Not Support Maintenance Command 0x%x 0x%x
+4,37,M0609 Maintenance Write 0x%x 0x%x
+4,38,M0610 Eject Brank Request
+4,39,M0611 Not Support Status Request From Controller %d
+4,40,M0612 G6 Line Disconnect Run SleepMode 0x%02x
+4,41,M0613 Illegular G6 Line Disconnect 0x%02x
+4,42,M0614 Maintenance Exec start!
+4,43,M0615 startDiag
+4,44,M0616 diagWriteMemory add:%08x value:%08x
+4,45,M0617 diagReadMemory add:%08x value:%08x
+4,46,M0618 diagWriteBackUp dev:%d add:%08x value:%08x
+4,47,M0619 diagReadBackUp dev:%d add:%08x
+4,48,M0620 diagReplyReadValue %x
+4,49,M0621 diag writeCmp
+4,50,M0622 IF:readMt 0x%x
+4,51,M0623 IF:readMt 0x%hx
+4,52,M0624 IF:readMt 0x%lx
+4,53,M0625 IF:readMtSub 0x%lx
+4,54,M0626 IF:readMtSizeErr %d
+4,55,M0627 IF:writeMTSub %lx %d
+4,56,M0628 [History]tblOffset=%d repIndex(size)=%d
+4,57,M0629 [History Data] idx=%d, data=0x%02x
+4,58,M0630 Maintenance Exec finish!
+4,59,M0631 GIfc.simRdTout
+4,60,M2027 Request Sleep Scan 0x%02x (0:Ready, 2:Off Mode 3,4:Sleep: other:Not Support))(0x80:Ignore Request)
+4,62,M0632 ServiceSts overDataSize %d %d
+4,63,M0633 ServiceSts send %d %d
+5,1,M0634 EXCEPTION_PPrf_Pnt3,Prt ID Err %02x
+5,2,M0635 pageId prId sFeed sEject size weight mediaType Permit waitImage   velocity    printSpeed(0:full,2:half)
+5,3,M0636   %02d    %02x   %02x    %02x     %02x    %02x      %02x       %02x       %02x      %02x            %02x
+5,4,M0637 EXCEPTION_PPrf_SizeErr,PapCodeErr,   sizeCode:%hd
+5,5,M2100 EXCEPTION_PPrf_Pnt3,QueueFull,prId:%02x
+6,1,M0638 SRun.exe event 0x%x, data1:0x%x, data2:0x%x
+6,2,M0639 SSlp_SleepIN %d
+6,3,M0640 SSlp_HoldIN
+6,4,M0641 SSlp_SleepOUT
+6,5,M0642 SSlp_CmpTerm %hx -> %hx
+6,6,M0643 SSlp_CmpBfSlpProc %hx -> %hx
+6,11,M0644 Sini.cmpReadBackup
+6,12,M0645 Sini.cmpInitOption
+6,13,M0646 Sini.cmpSetTonerStat
+6,14,M0647 Sini.TimeOutSequence 0x%x
+6,15,M0648 Sini.c-call560
+6,16,M0649 SiniScan.cmpReadBackup
+6,17,M2208 Sini.cmpReadBackupOption
+6,18,M2094 SiniDp.cmpReadBackup
+6,19,M2299 Sini.cmpSetInitStat
+6,20,M2095 Sini.cmpReadBackupCore
+6,22,M0650 SrunScan.cmpScanComplete
+7,1,M0651 FPrt.term
+7,2,M0652 FPrt.ntfSeq %x,%hx
+7,3,M0653 FPrt.stb %x
+7,4,M0654 FPrt.str %x
+7,5,M0655 FPrt.create %x,%lx
+7,6,M0656 FPrt.fin %x
+7,7,M0657 FPrt.can
+7,8,M0658 FPrt.cmpStr %x,%lx
+7,9,M0659 FPrt.cmpStb %x,%lx
+7,10,M2024 precisionTimerOver!!
+7,11,M2025 precisionSceErr!!
+7,12,M2200 FPrt.verify %x
+7,13,M2201 FPrt.cmpVerify %x,%lx
+12,10,M0660 ASIC Access Complete req:%d color:%d
+12,11,M0661 ASIC Access Start req:%d color:%d
+12,12,M0662 HistoryData::readAll ERR step:%d result:%d
+12,13,M0663 HistoryData::readAll c:%d s:%d 0x%x->0x%x
+12,14,M0664 Complete Flash
+12,15,M0665 Complete Initial device:%d
+12,16,M0666 C0150:EEPROM Device Error
+12,17,M0667 ignore unit No.%d
+12,18,M0668 UNIT check[%d] E2P:0x%02x ID:0x%02x
+12,19,M0669 UNIT ERR check[%d] E2P:0x%02x ID:0x%02x
+12,21,M2028 DPSSW Write Retry  device:%d cnt:%d step:%d gInfResult:%d
+12,22,M2029 DPSSW Read Retry  device:%d cnt:%d step:%d gInfResult:%d
+12,23,M2030 DPSSW Signal Error init:%d unknown:%d writeEnd:%d
+12,24,M2031 DPSSW Backup Write Error
+12,25,M2032 DPSSW Command Buffer Full:%d
+12,26,M2033 DPSSW Signal On Error method:%d cnt:%d step:%d
+12,27,M2034 DPSSW VerifyError req:%x data:%x verify:%x
+12,28,M2035 DPSSW Calib  Pap Threshold:0x%x
+12,29,M2036 DPSSW Calib  Lap Threshold:0x%x
+12,30,M2037 DPSSW Calib  Lap Sensor:0x%x
+12,31,M2038 DPSSW update Pap Threshold:0x%x
+12,32,M2039 DPSSW update Lap Threshold:0x%x
+12,33,M2040 DPSSW Calib Start
+12,34,M2041 DPSSW Thresh Start
+12,35,M2042 DPSSW Adjust End:0x%x
+12,36,M2043 DPSSW Pap Threshsold ssw:0x%x eng:0x%x
+12,37,M2044 DPSSW Lap Threshsold ssw:0x%x eng:0x%x
+12,38,M2045 DPSSW Pap Adjust ssw:0x%x
+12,39,M2046 DPSSW Lap Adjust ssw:0x%x
+12,40,M2047 DPSSW Send 0x%x 0x%x
+12,41,M2048 DPSSW Read 0x%x
+12,42,M2049 DPSSW Calib Sens Value Error Pap:0x%x Lap:0x%x
+12,43,M2050 DPSSW initial internal Error
+12,44,M2051 DPSSW Update internal Error
+12,45,M2052 DPSSW Unknown Retry 0x%x
+12,46,M2053 DPSSW checkSignal 0x%x %d
+12,47,M2054 DPSSW checkWrite  0x%x %d
+12,48,M2055 DPSSW checkCalib  0x%x %d
+12,49,M2056 DPSSW Initial Type %d
+12,50,M2057 DPSSW Version Error
+12,51,M2058 DPSSW Calib  Pap Sensor:0x%x
+12,52,M2059 DPSSW Calib  Discharge :0x%x
+12,53,M2060 DPSSW update Discharge :0x%x
+12,55,M2220 UNIT EEPROM Data Error device:%d
+12,57,M2251 COMPLETE NEW STARGE device:%d
+13,3,M0670 TH1 %d %d
+13,4,M0671 TH2 %d %d
+13,5,M0672 Alg0 %d %d
+13,6,M0673 Alg1 %d %d
+13,7,M0674 Sta %d %d
+13,8,M0675 Info %d %d
+13,9,M0676 Ctl0 %d %d
+13,10,M0677 Ctl1 %d %d
+13,11,M0678 Pres %d %d
+13,12,M0679 Duty %d %d
+13,13,M0680 DSub %d %d
+13,14,M0681 staDuty tim:%d duty:%d mode:%d
+13,15,M0682 DutyAdj airAdj:%d diffAdj:%d mediaAdj:%d speedAdj:%d wuAdj:%d
+13,16,M0683 T21 %d airAdj:%d wuAdj:%d
+13,17,M0684 T22 %d airAdj:%d wuAdj:%d
+13,18,M0685 T23 %d airAdj:%d wuAdj:%d grainAdj:%d
+13,19,M0686 T24 %d airAdj:%d mediaAdj:%d wuAdj:%d speedAdj:%d grainAdj:%d carlAdj:%d
+13,20,M0687 T25 %d airAdj:%d
+13,21,M0688 TH3 %d %d
+13,22,M0689 TH5 %d %d
+13,23,M0690 Icpu %d %d
+13,24,M0691 AveP %d %d
+13,25,M0692 CtlP %d %d
+13,26,M0693 Clk %d %d
+13,27,M0694 CT2 %d %d
+13,28,M2410 Core %ld %d
+13,29,M0695 TH2Raw %d %d
+13,30,M0696 Fuser duty AdjT %d   isRestart:%d
+13,31,M0697 Fuser duty AdjPR %d   isRestart:%d
+13,32,M0698 Fuser Rdy duty AdjPR %d
+13,33,M0699 WuAdjDuty %d
+13,34,M0700 FSR:changePpmTH1_TH3 %d
+13,35,M0701 FSR:changePpmTH2 %d
+13,36,M0702 FSR:changePpmVolt %d
+13,37,M0703 ≪定着制御パラメータ≫
+13,38,M0704 [%02d] %d
+13,39,M0705 OptIH_Retry %d
+13,40,M0706 FSR:speed adjust adjPattern=%d rdyDispElapseTimeStep=%d startTempLevel=%d
+13,41,M0707 ROLLER:ON speed %d
+13,42,M0708 ROLLER:OFF
+13,43,M0709 carlAdj(Hi-1) weight:%d width:%d adj:%d
+13,44,M0710 carlAdj(Hi-2) weight:%d width:%d size:%d(idx:%d) adj:%d
+13,45,M0711 carlAdj(Lo-1) weight:%d width:%d adj:%d
+13,46,M0712 carlAdj(Lo-2) weight:%d width:%d size:%d(idx:%d) adj:%d
+13,47,M2023 BaseDuty %d %d
+13,48,M2180 Spd %d %d
+13,49,M2181 id:%d value:%d
+13,50,M2078 ≪制御温度更新履歴≫
+13,51,M2700 FS:PaSize %d %d
+13,52,M2701 FS:MediaType %d %d
+13,53,M2702 FS:ColorMode %d %d
+13,54,M2703 FS:PaWeigth %d %d
+13,55,M2704 FS:PaSpeed %d %d
+13,56,M2705 FS:PaFeed %d %d
+13,57,M2706 FS:PaSide %d %d
+13,58,M2707 FS:Brand %d %d
+13,59,M2650 ≪定着制御温度補正≫
+13,60,M2651 [%02d] %d
+13,61,M2652 PrintTemp:%d T25:%d 
+13,62,M2130 PrintTempAdjust:MediaAdj:%d AirAdj:%d WuAdj:%d PrAdj:%d ArchiveAdj:%d DuAdj:%d LengthAdj:%d
+14,1,M0713 patchNumErr index[%d] patchNum[%d]
+14,2,M0714 patchDeffErr Horizon index[%d]
+14,3,M0715 patchDeffErr Vertical
+14,4,M0716 patchDeffErr color[%d] value[%d]
+14,5,M0717 patchDeffErr Multipl color[%d] value[%d]
+14,6,M0718 idSensorAdj Start
+14,7,M0719 LP=%d LS=%d 
+14,8,M0720 RP=%d RS=%d 
+14,9,M0721 LP=%d LS=%d 
+14,10,M0722 RP=%d RS=%d 
+14,11,M0723 idSensorAdj OK L=%d R=%d
+14,12,M0724 idSensorAdj NG L=%d R=%d
+14,13,M0725 %04d, %04d, %04d, %04d
+14,14,M0726 smp %04d %04d %04d %04d
+14,15,M0727 BiasCalib Start
+14,16,M0728 BiasCalib OK
+14,17,M0729 BiasCalib NG
+14,18,M0730 IDSensor Low P=%d index=%d
+14,19,M0731 IDSensor High P=%d index=%d
+14,20,M0732  LP,   LS,   RP,   RS
+14,21,M0733 %04d, %04d, %04d, %04d
+14,22,M0734 BackGroundAve L_P=%d L_S=%d R_P=%d R_S=%d 
+14,23,M0735 slvDC=%d mgDCg=%d ΔV=%d
+14,24,M0736 %d: L CTD = %d
+14,25,M0737 %d: R CTD = %d
+14,26,M0738 LPCalib Start
+14,27,M0739 LPCalib OK
+14,28,M0740 LPCalib NG
+14,29,M0741 Calibration Start FullColor
+14,30,M0742 IOCalib Start
+14,31,M0743 IOCalib OK
+14,32,M0744 IOCalib NG
+14,33,M0745 calib sampling OVER!!
+14,34,M0746 CTD Calc Err
+14,35,M0747 calc err
+14,36,M0748 CTD color %d
+14,37,M0749 CTDErr color=%d Vdc=%d
+14,38,M0750 Left  %02d: CTD=%d XYZrev=%d
+14,39,M0751 Right %02d: CTD=%d XYZrev=%d
+14,40,M0752 Power = %d 
+14,41,M0753 shiftValue_H sensor%d Y=%d C=%d M=%d   [0.01dot]
+14,42,M0754 shiftValue_V Y=%d C=%d M=%d   [0.01dot]
+14,43,M0755 Calibration Start MONO
+14,44,M0756 printCalib %d
+14,45,M0757 PrintEndCalib %d
+14,46,M0758 t1=%d t2=%d t3=%d t4=%d t5=%d
+14,47,M0759 rescueMode=%d dtlsu=%d dTH=%d
+14,48,M0760 DlpDriveTime Y:%d C:%d M:%d K:%d
+14,49,M0761 fullCalibDlpDriveTime %d
+14,50,M0762 fullMonoCalibDlpDriveTime %d
+14,51,M0763 registrationDlpDriveTime %d
+14,52,M0764 IOcalib Errorcondtion%d
+14,53,M0765 PG top Margin adj=%d Value=%d
+14,54,M0766 Bias BackGround Ave Err aveBg.L_P=%d aveBg.R_P=%d
+14,55,M0767 Bias BackGround Max Err ctd=%d
+14,56,M0768 IO BackGround Ave Err L=%d R=%d
+14,57,M0769 IO BackGround Max Err ctd=%d
+14,58,M0770 OutTemp=%d OutHimi=%d AbsoluteHumi=%d 
+14,59,M0771 fuserStartTemp=%d dTlsu=%d ΔV=%d
+14,60,M0772 powerON
+14,61,M0773 fromSleep or CoverClose
+14,62,M0774 registration Start
+14,63,M0775 edgeLog   L   R
+14,64,M0776    %06d     %06d
+14,65,M0777 BkupSts.lastJobTime=%d BkupSts.rtcPassTime=%d t1=%d
+14,66,M0778 regPatchPosi L R
+14,67,M0779     %06d  %06d
+14,68,M0780 regPatchNum %d %d
+14,69,M0781 registration OK
+14,70,M0782 registration NG
+14,71,M0783 patch Over
+14,72,M0784 edge noise %d %d 
+14,73,M0785 Calibration Start registration
+14,74,M0786 Calibration Start HalfTone
+14,75,M0787 HalfTone Calib Start
+14,76,M0788 HalfTone Calib OK
+14,77,M0789 HalfTone Calib NG
+14,78,M0790 Start BackGround Measure
+14,79,M0791 %04d %04d %04d %04d  |  %04d %04d %04d %04d
+14,80,M0792 HalfTone error type1  id:%d color:%d i:%d pos:%d
+14,81,M0793 HalfTone error type2  id:%d color:%d i:%d pos:%d j:%d
+14,82,M0794 BiasCalibLP DrvDistance:%d drumRollTimes:%d value:%d
+14,83,M0795 calcDurability error
+14,84,M0796 PrintStartCalib %d
+14,85,M2014 Full Calibration Start ColorType=%d (mono:0, FullColor:2)
+14,86,M2015 Calibration End
+14,87,M2016        Left         |         Right
+14,88,M2017 calbTimerCalcError info1:%d speed:%d info4:%d
+14,89,M2018 Remaining time is longer than scenario start point
+14,90,M2019 Short Calibration Start
+14,91,M2020 Easy Calibration Start
+14,92,M2021 update cond req = %d, %d prof = %x
+14,93,M2800 mes : %d sta : %d -> %d
+15,1,M0797 dispatch eFUNC_COVER_MSG:0x%x
+15,2,M0798 start ret:%d
+15,3,M0799 NotifyCoverStatus seqId:%d senId:%d ret:0x%x
+15,4,M0800 judgeCoverStatus index:%d sts:0x%x nowData:0x%x
+15,5,M0801 Cover_Index:%d
+15,6,M0802 Device_Index:%d
+15,8,M0803 Feeder.unitReadyVolumeE Id %d,  %d, %d
+15,9,M0804 FD:chg %d, %d
+15,10,M0805 FD:Mac %d, %d->%d
+15,11,M0806 FD:CAS %d, %d->%d
+15,12,M0807 FD:PAP %d, %d->%d
+15,13,M0808 FD:ins %d, %d
+15,14,M0809 FD:ins_2 %d, %d
+15,15,M0810 FD:ins_3 %d, %d
+15,16,M0811 FD:massage %d, event %d, data %d
+15,17,M0812 FD:setWaiteBuffer %d, data:%d  target:%d
+15,18,M0813 FD:clearWaitBuffer %d, data:%d, target:%d
+15,19,M2013 CONTAINER LOCK RELEASE RESULT color:%d result:%d
+16,1,M0817 [colrel]exe evt:%d sce:%d tgt:0x%x page:0x%x 
+16,2,M0818 [colrel]nonexe evt:%d state:%d exeSeq:%d page:0x%x
+16,3,M0819 [colrel]colrelSta %d > %d
+16,4,M0820 [colrel]comp tgt:0x%x sce:%d next:%d
+16,5,M0821 [colrel]sce_setup_err sce:%d seq:%d page:0x%x
+16,6,M0822 [colrel]sce_start_err sce:%d seq:%d page:0x%x
+16,7,M0823 [colrel]c-call2700 Error seq:%d page:0x%x
+16,9,M0824 [colrel]colorRejectMode 
+16,11,M0825 DRM UNIT check[%d] E2P:0x%02x ID:0x%02x
+16,12,M0826 DRM UNIT ERR check[%d] E2P:0x%02x ID:0x%02x
+16,13,M0827 SCENARIO SELECT_ERROR
+16,14,M0828 pending Msg:%d pageId:%d
+16,15,M0829 PendingEnd scenario:%d
+16,16,M0830 scenario set up Error sceId:%d pageId:%d exeSeqId:%d
+16,17,M0831 scenario exe Error sceId:%d pageId:%d exeSeqId:%d
+16,18,M0832 occuerdFuserError
+16,19,M0833 cancel running req %d 
+16,21,M0834 printEnd KeepTime %d
+16,22,M0835 firstPrint LL agingCheck Hum %d , Time %d, FirstPrint %d
+17,2,M0836 dispatch [WU_START]
+17,3,M0837 dispatch [CHANGE_DLPCLT] type:%d
+17,4,M0838 dispatch [OPEN_COVER]
+17,5,M0839 dispatch [CHANGE_CONTAINER] exchange:%d
+17,6,M0840 dispatch [PRINT_END]
+17,7,M0841 dispatch [TERMINATE]
+17,8,M0842 terminate | install:%d  tnrState:%d  aging:%d
+17,9,M0843 wuStart | prtRate:%d  prtNum:%d  connState:%d  installMode:%d
+17,10,M0844 Recover Toner state | motorDrv:%d  tnrState:%d pretnrState:%d
+17,11,M0845 Degrade toner state | U136:%d  detect:%d  newTnrState:%d pRate:%d pNum:%d
+17,12,M0846 Save print info RAM | tnrState%d  prtRate(ram:%d, rom:%d)  prtNum(ram:%d, rom:%d)
+17,13,M0847 Aging toner | exchange:%d  U136:%d
+17,14,M0848 Recover toner | exchange:%d  U136:%d
+17,15,M0849 Start Sensor monitoring | type:%d
+17,16,M0850 Stop Sensor monitoring | type:%d
+17,17,M0851 Container set signal | sig:%d
+17,18,M0852 Toner sensor signal(WU) | sig:%d  type:%d  hiCnt:%d  sampleNum:%d
+17,19,M0853 Toner sensor signal(PRT) | sig:%d  type:%d  hiCnt:%d  lowCnt:%d
+17,20,M0854 Container lock signal | sig:%d  hiCnt:%d  lowCnt:%d
+17,21,M0855 PRINT remaining sensor detect | hiCnt:%d  lowCnt:%d  isTnr:%d
+17,22,M0856 WU remaining sensor info | hiCnt:%d  isTnr:%d
+17,23,M0857 Save print info ROM | tnrState%d  prtRate(ram:%d, rom:%d)  prtNum(ram:%d, rom:%d)
+17,24,M0858 TargetTPCAdjust Vgrd    col:%d, adjVal:%d
+17,25,M0859 TargetTPCAdjust VtmpHum col:%d, adjVal:%d(outerHum:%d, outerTemp:%d)
+17,26,M0860 TargetTPCAdjust Vdot    col:%d, adjVal:%d(envAdj:%d, totalRate:%d)
+17,27,M0861 TargetTPCAdjust Vtmp2   col:%d, adjVal:%d(dlpTemp:%d, outerTemp:%d)
+17,28,M0862 TargetTPCAdjust Vvslv   col:%d, adjVal:%d
+17,29,M0863 TargetTPC col:%d, val:%d (VtpcI:%d, adjVal:%d)
+17,30,M0864 Vmax average col:%d, val:%d
+17,31,M0865 Supply col:%d, onTime:%d, offTime:%d, count:%d
+17,32,M0866 Received PrintRate col:%d, rate:%d
+17,33,M0867 Treatment start color:%d
+17,34,M0868 Treatment end color:%d
+17,35,M0869 Treatment timeout color:%d, count:%d
+17,36,M0870 Develop state changed color:%d, state:%d->%d 
+17,37,M0871 Aging status:%d
+17,38,M0872 Detected need treatment col:%d, tpcVal:%d, threshold:%d + %d
+17,39,M0873 inst sta tim:%d
+17,40,M0874 inst up tim:%d
+17,41,M0875 inst end tim:%d
+17,42,M0876 output Toner Log [ON]
+17,43,M0877 output Toner Log [OFF]
+17,44,M0878 %d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d
+17,45,M0879 TargetTPCAdjust Vsp     col:%d, adjVal:%d(spd:%d, bkTQ:%d, bkHF:%d)
+17,46,M0880 FTnr.Wu[Full] Tpc Vsp Adj  col:%d adj:%d
+17,47,M0881 FTnr.Wu[3Q]   Tpc Vsp Adj  col:%d adj:%d full:%d tpc:%d
+17,48,M0882 FTnr.Wu[Half] Tpc Vsp Adj  col:%d adj:%d full:%d tpc:%d
+17,49,M0883 FTnr.Wu Skip VspSensing col:%d tnr_sts:%d
+17,50,M0884 clear toner status
+17,51,M0885 chg toner empty (motor=%d)
+17,52,M0886 chg toner low (motor=%d)
+17,53,M0887 chg toner normal (motor=%d)
+17,54,M0888 chg toner empty (all motor)
+17,55,M0889 chg toner low (all motor)
+17,56,M0890 chg toner normal (all motor)
+17,57,M0891 Calc adj Vvslv  col:%d, adjVal:%d, bias:%d
+17,58,M0892 Calc linear adj Vdot1 adjval:%d, Adjmp1:%d, Adjm:%d
+17,59,M0893 Calc linear adj Vdot2 Ratemp1:%d, Ratem:%d, totalRate:%d
+17,60,M0894 tonerInstall waste count %d
+17,61,M0895 tonerInstall cleaning count %d
+17,62,M0896 tonerInstall EXE mode replenish start
+17,63,M0897 tonerInstall EXE mode waste toner start
+17,64,M0898 tonerInstall EXE mode cleaning start
+17,65,M0899 tonerInstall Complete
+17,66,M0900 EXCEPTION_FTnrM_setError col=%d errcode=%d
+17,67,M0901 [SET TOTAL RATE] col=%d rate=%d => total_rate=%d
+17,68,M0902 [GET TOTAL RATE] col=%d total_rate=%d
+17,69,M0903 FTnr:cntUpEmptyCntr EmptyPrintPage:%d, col:%d
+17,70,M0904 FTnr:cntUpEmptyRate EmptyPrintRate:%d, col:%d
+17,71,M0905 FTnrRateFine bufId:%d, col:%d, printRate:%d
+17,72,M0906 FTnrRateCnsp bufId:%d, col:%d, %d, %d
+17,73,M0907 FTnrRatePurge bufId:%d, col:%d, %d, %d
+17,74,M0908 FTnr.chkChgCtn %d: %d, %d, %d 
+17,75,M0909 FTnr.cmpTreat %d: 0x%02x %d
+17,76,M0910 Rsc.cmpTreat %d: %d
+17,77,M0911 Rsc.CONTAINER change %d, color %d
+17,78,M0912 Rsc.isCorRscCol %d, %d, %d
+17,79,M0913 FTnr.WU col isRsc %d, RscEmpty %d, RscChgCnt %d, isChgCtn %d, 
+17,80,M0914 FTnr.WU bk isRsc %d, RscEmpty %d, RscChgCnt %d
+17,81,M0915 FTnr.WaitContainerExchangeEvent timeout!! %dms
+17,82,M0916 FTnr.HiRatePrint %d, %d, %d
+17,83,M0917 FTnr.NotifyRate %d %d %d %d
+17,84,M0918 FTnr.NotifyRate.T7 %d %d %d
+17,85,M0919 FTnr.NotifyRate.Ref/Calib %d %d %d
+17,86,M0920 FTnr.rcvPurge
+17,87,M0921 FTnr.NotifyGenuine %d %d
+17,88,M0922 FTnr.tr notRecover %d
+17,89,M0923 FTnr.tr Recover %d
+17,90,M0924 FTnr.chkSupply col:%d, Vmax_xx:%d, Vtpc_xx:%d, Vtr:%d, pr:%d, sct:%d
+17,92,M0925 [Tsim] colSel %d
+17,93,M0926 [Tsim] ---usage---
+17,94,M0927 [Tsim] sw  : on/off switch (1:ON, 0:OFF)
+18,1,M0928 lsuSta %d %d
+18,2,M0929 ApcState A=%d B=%d C=%d D=%d
+18,3,M0930 NormalHorizonY %d %d
+18,4,M0931 NormalHorizonC %d %d
+18,5,M0932 NormalHorizonM %d %d
+18,6,M0933 DetailHorizonY %d %d %d %d %d %d %d
+18,7,M0934 DetailHorizonC %d %d %d %d %d %d %d
+18,8,M0935 DetailHorizonM %d %d %d %d %d %d %d
+18,9,M0936 VerticalAdj Y=%d C=%d M=%d
+18,10,M0937 modnumNormal
+18,11,M0938 modnumDetail
+18,12,M0939 M%d %d %d %d
+18,13,M0940 modup A[0x%02x%02x] B[0x%02x%02x] C[0x%02x%02x] 
+18,14,M0941 Lp calib pwer error
+18,15,M0942 Vshift A:%d B:%d C:%d D:%d
+18,16,M0943 Hmargin A:%d B:%d C:%d D:%d
+18,17,M0944 cmpAccessAsic id:%d cmpbit:0x%x
+18,18,M0945 lsuAsic req:%d
+18,19,M0946 feed:%d topTimingt:%d dot:%d adjustValue:%d
+18,20,M0947 feed:%d leftTiming%d dot:%d
+18,21,M0948 setCustomDataNG reqId:%d driveSpdMode:%d resolution:%d offset:%d i:%d ctl:%d reg:%d
+18,22,M0949 minus min=%d minNum=%d
+18,23,M0950 1:DLPREF PG
+18,24,M0951 2:BIAS_CALIB PG
+18,25,M0952 3:LP_CALIB PG
+18,26,M0953 4:IO_CALIB PG PG
+18,27,M0954 5:BIAS_CALIB_MONO PG
+18,28,M0955 6:LP_CALIB_MONO PG
+18,29,M0956 7:IO_CALIB_MONO PG
+18,30,M0957 8:REGISTRATION PG
+18,31,M0958 9:PG_OFF
+18,32,M0959 pgtype:%d
+18,33,M0960 setT7 ERR
+18,34,M0961 setT7VST color:%d  %d
+18,35,M0962 setT7PG wVideoData[%d] <= %d
+18,36,M0963 setKMAT color:%d  %d
+18,37,M0964 LSU1_APCSTATE_D:%d
+18,38,M0965 D_INICHP_ENB:%d
+18,39,M0966 D_FLDSET:%d
+18,40,M0967 LSU1_SYOKIKA_ST:%d
+18,41,M0968 polygonReady:%d
+18,42,M0969 pgSetComplete
+18,43,M0970 ldOn
+18,44,M0971 ldOff
+18,45,M0972 polygonOff
+18,46,M0973 polygonOnNormal
+18,47,M0974 polygonOnHalf
+18,48,M0975 D_CHIP_ENB_ON
+18,49,M0976 HIGH_PPM_FULL_600DPI
+18,50,M0977 HIGH_PPM_HALF_600DPI
+18,51,M0978 HIGH_PPM_HALF_1200DPI
+18,52,M0979 LOW_PPM_FULL_600DPI
+18,53,M0980 LOW_PPM_HALF_600DPI
+18,54,M0981 LOW_PPM_HALF_1200DPI
+18,55,M0982 asicCmpOk
+18,56,M0983 asicCmpNg
+18,57,M0984 vsync:%d
+18,58,M0985 resolution:%d
+18,59,M0986 asicCmpVideoOk
+18,60,M0987 asicCmpVideoNg
+18,61,M0988 reqIdSetutputSize:%d
+18,62,M0989 initial
+18,63,M0990 initialRegSet
+18,64,M0991 initialReg2Set
+18,65,M0992 hwSet
+18,66,M0993 hwSetHigh_ppm
+18,67,M0994 hwSetLow_ppm
+18,68,M0995 externalDevice
+18,69,M0996 externalDevice2
+18,70,M0997 disableClk
+18,71,M0998 disableClk2
+18,72,M0999 setOutputSize
+18,73,M1000 reqId:%d
+18,74,M1001 Paper Count %d, exeCnt %d
+18,75,M1002 LSUClean start
+18,76,M1003 LSUClean terminate
+18,77,M1004 LSUClean need check isPwrUp ON
+18,78,M1005 LSUClean need check Unit Change
+18,79,M1006 reqIdLdOn:%d
+18,80,M1007 reqIdLdPower:%d
+18,81,M1008 getVshift:%d
+18,82,M1009 verticalMargin:%d
+18,83,M1010 horizontalMargin:%d
+18,84,M1011 topMargin:%d
+18,85,M1012 leftMargin:%d
+18,86,M1013 eachColorVerticalMargin:%d
+18,87,M1014 eachColorHorizontalMargin:%d
+18,88,M1015 VSHIFT[0]:%d
+18,89,M1016 vshift:%d
+18,90,M1017 lobyte_vshift:%d
+18,91,M1018 hibyte_vshift:%d
+18,92,M1019 vst:%d
+18,93,M1020 rdspgt_4th[0]:%d
+18,94,M1021 rdspgt_4th[1]:%d
+18,95,M1022 rdspgt_4th[2]:%d
+18,96,M1023 rdspgt_4th[3]:%d
+18,97,M1024 horizonAdjRet:%d
+18,98,M1025 LSUclean Error Count:%d point:%d dir:%d
+18,99,M1026 lsuSpeed:%d isBk:%d resol:%d
+18,100,M1027 drvDistance:%d
+18,101,M1028 ldPowerCoefficient:%d
+18,102,M1029 expPow:%d
+18,103,M1030 chp_Spechigh600DPI:%d
+18,104,M1031 chp_Spechighhalf1200DPI:%d
+18,105,M1032 chp_Spechighhalf600DPI:%d
+18,106,M1033 chp_Speclowfull600DPI:%d
+18,107,M1034 chp_Speclowhalf1200DPI:%d
+18,108,M1035 chp_Speclowhalf600DPI:%d
+18,109,M1036 weight:%x mediaType:%x selectFeed:%x offset:%x dot:%x
+18,110,M1037 feed:%d topTiming:%d dot:%d
+18,111,M1038 feed:%d leftTiming:%d dot:%d
+18,112,M1039 dotCountD1:0x%x%x
+18,113,M1040 dotCountD2:0x%x%x
+18,114,M1041 dotCountVariable:0x%x
+19,10,M1042 UnreadyThermPileSet
+19,11,M1043 Detect Lower Limit Error id=%d limit=%d val=%d
+19,12,M1044 Detect Upper Limit Error id=%d limit=%d val=%d
+20,1,M1045 Rem:%d Curr:%d Volt:%d Temp:%d T_Pow:%d Freq:%d
+20,2,M1046 CurrF:%d VoltC:%d VoltAdj:%d Pow:%d Vtype:%d
+20,3,M1047 POWER_LOW
+20,4,M1048 POWER_RESUME
+20,5,M1049 ERR_SIGNAL_ON
+20,6,M1050 ERR_SIGNAL_OFF
+20,7,M1051 IGBT2_ERR
+20,8,M1052 CURRENT_ERR
+20,9,M1053 P_LOW_Ccall
+20,10,M1054 REMORT_FAIL
+20,11,M1055 REM_RETRY
+20,12,M1056 AC_V_HIGH
+20,13,M1057 AC_V_HIGH_RESUME
+20,14,M1058 AC_V_LOW
+20,15,M1059 AC_V_LOW_RESUME
+22,2,M1060 scnEvent:%02d time:%10d event:%03d
+22,3,M1061 [asic:%d] adr:%03x val:%02x 
+22,4,M1062 w [asic:%d] 0x%03x 0x%02x
+22,5,M1063 r [asic:%d] 0x%03x 0x%02x
+22,6,M1064 SCAN ASIC SRAM DUMP
+22,7,M1065 [asic:%d][0x%03x]0x%03x
+22,8,M1066 _REGADR_  +0 +1 +2 +3 +4 +5 +6 +7 +8 +9 +A +B +C +D +E +F
+22,9,M1067 [asic:%d] 0x%03x : %02x
+22,10,M1068 debug thru mode 0x%04x
+22,11,M1069 %d:thruGamma
+22,12,M1070 %d:thruSbf
+22,13,M1071 %d:thruChh
+22,14,M1072 %d:thruMtx
+22,15,M1073 %d:thruLa
+22,16,M1074 %d:thruChip
+22,17,M1075 %d:thruBlr
+22,18,M1076 debug not thru
+22,19,M1077 ScanDebug:A:%d B:%d C:%d D:%d
+22,20,M1078 funcSbfSet val(%d)
+22,21,M1079 funcSbfSet 600
+22,22,M1080 funcSbfSet 300
+22,23,M1081 funcSbfSetLow 300
+22,24,M1082 funcSbfSet:Error val(%d)
+22,25,M1083 ScenarioTbl Time:%d ID:%d
+22,26,M1084 [ERROR]ScenarioTbl %d
+22,28,M1085 [actLedSetSta] start
+22,29,M1086 [actLedSet] startWrite
+22,30,M1087 [actLedSet] LED:DONE
+22,31,M1088 [actLedSet] LED:WORKING
+22,33,M1089 *** occure c3500 ***
+22,34,M1090 S:%02x
+22,35,M1091 R:%02x
+22,36,M1092 result%d=%04hx
+22,37,M1093 %dch:setBkPointErase
+22,38,M1094 %dch:setMreData
+22,39,M1095 %dch:setBkLineSet:%hd
+22,40,M1096 mre 300dpi mode:%02x
+22,41,M1097 mre 600dpi mode:%02x
+22,42,M1098 DP Wide Size err  = %ld[mm]
+22,43,M1099 DP Wide Size after  = %ld[dot]
+22,44,M1100 bkHsta = %ld
+22,45,M1101 bkHEnd = %ld
+22,46,M1102 bkOvsyst=%d
+22,47,M1103 setTarget cisType:%d ledT:%d pgaT:%d
+22,48,M1104 [timer] eventTimer err
+22,49,M1105 [asic] squence err(%d)
+22,50,M1106 asc_tsk: ev[%d]
+22,51,M1107 AS:gammaR
+22,52,M1108 AS:gammaG
+22,53,M1109 AS:gammaB
+22,54,M1110 AS:a%02x%02x
+22,55,M1111 AS:b%02x%02x
+22,56,M1112 AS:c%02x%02x
+22,58,M1113 %hd:funcLedSetIni
+22,59,M1114 %dch:funcLedSetIni
+22,60,M1115 wid:%hd
+22,61,M1116 adj:%hd
+22,62,M1117 str:%d
+22,63,M1118 end:%d
+22,64,M1119 wid:%d
+22,65,M1120 funcLedSetRCalc %d
+22,66,M1121 stR:0x%02x%02x
+22,67,M1122 edR:0x%02x%02x
+22,68,M1123 funcLedSetGCalc %d
+22,69,M1124 stG:0x%02x%02x
+22,70,M1125 edG:0x%02x%02x
+22,71,M1126 funcLedSetBCalc %d
+22,72,M1127 stB:0x%02x%02x
+22,73,M1128 edB:0x%02x%02x
+22,74,M1129 funcLedSetModeSet %d
+22,75,M1130 %dch:funcLedSetCheck wid_err:%d
+22,76,M1131 funcLedSetCheck %d
+22,77,M1132 ret:%d
+22,78,M1133 pek:%d
+22,79,M1134 pkW:%d
+22,80,M1135 wid:%hd
+22,81,M1136 buf:%hd
+22,82,M1137 adj:%d
+22,83,M1138 rop:%d
+22,84,M1139 funcLedSetPwmCalc %d
+22,85,M1140 [ASC]pwmK300R:%hd,G:%hd,B:%hd
+22,86,M1141 [ASC]pwmK600R:%hd,G:%hd,B:%hd
+22,87,M1142 [ASC]pwmC300R:%hd,G:%hd,B:%hd
+22,88,M1143 [ASC]pekC300R:%hd,G:%hd,B:%hd
+22,89,M1144 %dch:funcLedSetPwmCalc_col300
+22,90,M1145 stR:%d
+22,91,M1146 edR:%d
+22,92,M1147 stG:%d
+22,93,M1148 edG:%d
+22,94,M1149 stB:%d
+22,95,M1150 edB:%d
+22,96,M1151 pwR:%d
+22,97,M1152 pwG:%d
+22,98,M1153 pwB:%d
+22,99,M1154 300
+22,100,M1155 %dch:funcLedSetPwmCalc_mono300
+22,101,M1156 RGB:%hd=%hd+%hd+%hd,MAX:%hd
+22,102,M1157 limit R:%hd,G:%hd,B:%hd
+22,103,M1158 600
+22,104,M1159 %dch:funcLedSetPwmCalc_mono600
+22,105,M1160 funcPgaIni
+22,106,M1161 pga:%d
+22,107,M1162 adj:%d
+22,108,M1163 funcPgaLedSelect
+22,109,M1164 led:%d
+22,110,M1165 funcPgaCheck
+22,111,M1166 pek:%d
+22,112,M1167 pga:%d
+22,113,M1168 buf:%d
+22,114,M1169 adj:%d
+22,115,M1170 rop:%d
+22,116,M1171 led:%d
+22,117,M1172 pkR:%d pwmR:%d
+22,118,M1173 pkG:%d pwmG:%d
+22,119,M1174 pkB:%d pwmB:%d
+22,120,M1175 [ASC]pgaC300:%d
+22,121,M1176 [ASC]pgaK300:%d
+22,122,M1177 [ASC]pgaK600:%d
+22,123,M1178 %hd:offset
+22,124,M1179 funcOffsetIni
+22,125,M1180 gcPeak_KG:%d
+22,126,M1181 %dch:funcOffsetCalc tar:%d
+22,127,M1182 OFFSET_s:%d
+22,128,M1183 OFFSET_r:%d
+22,129,M1184 VAL:%d
+22,130,M1185 funcCcdStart
+22,131,M1186 stR:0x%02x%02x,
+22,132,M1187 edR:0x%02x%02x,
+22,133,M1188 stG:0x%02x%02x,
+22,134,M1189 edG:0x%02x%02x,
+22,135,M1190 stB:0x%02x%02x,
+22,136,M1191 edB:0x%02x%02x,
+22,137,M1192 funcCcdStart cistyp:%d,
+22,138,M1193 [org]Min error1 (%d)
+22,139,M1194 %dch:funcOrgDtCalcuSecond
+22,140,M1195 [org]Min error2
+22,141,M1196 %dch:funcOrgDtCalcuFirst
+22,142,M1197 %dch:setOrgDtData
+22,143,M1198 %dch:funcLampIni
+22,144,M1199 cnt:%d
+22,145,M1200 [ASC]lampSingleErr
+22,146,M1201 [ASC]lampAllErr
+22,147,M1202 [ASC]lampR:%d,G:%d,B:%d
+22,148,M1203 gpR:%d
+22,149,M1204 gpG:%d
+22,150,M1205 gpB:%d
+22,151,M1206 tar:%d
+22,152,M1207 cnt:%d
+22,153,M1208 lne:%d
+22,154,M1209 %dch:funcCisTypeCheck!!
+22,155,M1210 [ASC]3CH CHECK ERROR
+22,156,M1211 3ch_gcPkLmpOn R:%d G:%d B:%d,
+22,157,M1212 3ch_gcPkLmpOff R:%d G:%d B:%d,
+22,158,M1213 3ch_On-Off R:%hd G:%hd B:%hd,
+22,159,M1214 chCheck_thres:%d
+22,162,M1215 [org]start
+22,163,M1216 [org]open1Chk id(%d)
+22,164,M1217 [org]startEme
+22,165,M1218 [org]open1Eme id(%d)
+22,166,M1219 [org]close1Chk id(%d)
+22,167,M1220 [org]close2 id(%d)
+22,168,M1221 [org]open1 id(%d)
+22,169,M1222 [org]end
+22,170,M1223 [timer] squence err(%d)
+22,171,M1224 [org]open1
+22,172,M1225 [org]close1
+22,173,M1226 [org]close2
+22,174,M1227 *********************
+22,175,M1228 [org] squence err(%d)
+22,176,M1229 [org]open1Wait
+22,177,M1230 [org]cancelSensor
+22,179,M1231 %hd:Ini_St
+22,180,M1232 %hd:Ini_Ed
+22,181,M1233 %hd:Ini_pga_St
+22,182,M1234 %hd:Ini_pga_Ed
+22,183,M1235 [SCN]pgaAdj C300
+22,184,M1236 [SCN]pgaAdj K300
+22,185,M1237 [SCN]pgaAdj K600
+22,186,M1238 chg next id = 0x%02x %d
+22,187,M1239 chg end id = 0x%02x %d
+22,188,M1240 chg end set id = 0x%02x %d
+22,189,M1241 nextScanCmp = 0x%02x
+22,190,M1242 =>
+22,191,M1243 %hd:backup_read cmp
+22,192,M1244 %hd:scn_tsk start
+22,193,M1245 Continue
+22,194,M1246 End
+22,195,M1247 %02x
+22,196,M1248 0x%03x
+22,197,M1249 Wait Timeout Start
+22,198,M1250 Wait Timeout Cmp
+22,199,M1251 [scn] squence err(%d)
+22,200,M1252 [SCN]colmode %d resmode %d devmode %d
+22,201,M1253 %hd:Mono6
+22,202,M1254 %hd:Mono3
+22,203,M1255 %hd:Color
+22,204,M1256 %hd:LampChk
+22,205,M1257 %hd:PWM
+22,206,M1258 [timer] HoldTimer err
+22,207,M1259 backUpReadComplete
+22,208,M1260 [timer] BackupTimer err
+22,210,M1261 timer[%d].id(%d)
+22,212,M1262 %hd:start cmd => %04hx
+22,213,M1263 cmd err
+22,214,M1264 crg_ini_dbg
+22,215,M1265 color_set:%d
+22,216,M1266 mono_set:%d
+22,217,M1267 \0\0\0
+22,218,M1268 sim %03x %03x %d->
+22,219,M1269  %02x
+22,220,M1270 \n
+22,221,M1271     
+22,222,M1272 >%02x %02x %02x %02x %02x %02x %02x %02x
+22,223,M1273 <%02x %02x %02x %02x %02x %02x %02x %02x
+22,225,M1274 num=0x%02x/0x%02x
+22,226,M1275 scnSta.attach.CcallNo=0x%04hx
+22,227,M1276 scnSta.attach.CcallRank=0x%04hx
+22,228,M1277 ERR:EXP_CHK
+22,229,M1278 ERR:EXP_ACT
+22,231,M1279 fc93 start
+22,232,M1280 [org]Emergency detect through
+22,233,M1281 [org]Emergency detect wait
+22,234,M1282 [org]Already detect fin
+22,235,M1283 [org]Emergency detect act
+22,236,M1284 flg.dev %d
+22,237,M1285 flg.col %d
+22,238,M1286 flg.res %d
+22,239,M1287 flg.dup %d
+22,240,M1288 [sCE]%02x-%04x
+22,241,M1289 SHDWADJ R   = 0x%04x
+22,242,M1290 SHDWADJ G   = 0x%04x
+22,243,M1291 SHDWADJ B   = 0x%04x
+22,244,M1292 DP Sensor 0 = 0x%02d
+22,245,M1293 DP Sensor 1 = 0x%02d
+22,246,M1294 AGC:White NG No(%d):(%04lx)
+22,247,M1295 AGC:White OK No(%d):(%04lx)
+22,248,M1296 AGC:Range OK
+22,249,M1297 AGC:AnRtrErr
+22,250,M1298 AGC:Gain  0x%02x:0x%02x:0x%02x:0x%02x:0x%02x:0x%02x:0x%02x
+22,251,M1299 AGC:offC  0x%02x:0x%02x:0x%02x:0x%02x:0x%02x:0x%02x:0x%02x
+22,252,M1300 AGC:offF  0x%02x:0x%02x:0x%02x:0x%02x:0x%02x:0x%02x:0x%02x
+22,253,M1301 SCENA_AGC END
+22,254,M1302 AGC:ALLRetry
+22,255,M1303 AGC:agcMode(%d)
+22,256,M1304 %hd:AGC
+22,257,M1305 AGC:CtlFlag(%d)
+22,258,M1306 lamp check max  0x%04x  0x%04x  0x%04x
+22,259,M1307 lamp check max err  0x%04x  0x%04x  0x%04x
+22,260,M1308 lamp check min W:0x%04x  0x%04x  0x%04x B:0x%04x  0x%04x  0x%04x
+22,261,M1309 lamp check min err W:0x%04x  0x%04x  0x%04x B:0x%04x  0x%04x  0x%04x
+22,262,M1310 eachLed:%x R:0x%04x G:0x%04x B:0x%04x thresh:0x%04x
+22,263,M1311 !!each led check err (RorGorB <= thresh)!!
+22,264,M1312 led white peak:R%d G%d B%d thresh:%d
+22,265,M1313 !!All led dark err (RorGorB <= thresh)!!
+22,266,M1314 !!Block led dark err (RorGorB <= thresh)!!
+22,267,M1315 !!EXCEPTION!![Asic]msgid:%d thr:%d dat1:%d exdat:%d
+22,268,M1316 [Tmsg]msgid:%d thr:%d dat1:%d exdat:%d
+22,269,M1317 [afe:%d] adr:%03x val:%02x 
+22,270,M1318 TrgChk(%d)
+22,271,M1319 [No]:[Time(ms)][id][Data(hex)]
+22,272,M1320 -----------------------------------
+22,273,M1321 %03d : %04d%04d %03x %02x %02x %02x %02x
+22,274,M1322 AGC:Gain 1st[%d][%d]:0x%02x
+22,275,M1323 AGC:offC 1st[%d][%d]:0x%02x
+22,276,M1324 AGC:offF 1st[%d][%d]:0x%02x
+22,277,M1325 AGC:Gain 2nd[%d][%d]:0x%02x
+22,278,M1326 AGC:offC 2nd[%d][%d]:0x%02x
+22,279,M1327 AGC:offF 2nd[%d][%d]:0x%02x
+22,280,M1328 vsyncNegate
+22,281,M1329 shgwadj R:%x G:%x B:%x DR:%x DG:%x DB:%x
+22,282,M1330 cMin:%x cMax:%x dpmin:%x dpmax:%x
+22,283,M1331 AGC:odd peakMax:[%d]R%d G%d B%d
+22,284,M1332 Tget:%d Tget_Fist:%d Current:%02x
+22,285,M1333 LEDset col:%d res:%d Current:%02x
+22,286,M1334 !!LedAdjMin:[%d] data:%x < MinLim:%x
+22,287,M1335 ScanProfile.completeEvent[%d]
+22,288,M2061 FUNCIMG AGCcolor300dpi
+22,289,M2062 FUNCIMG AGCcolor600dpi
+22,290,M2063 FUNCIMG AGCmono300dpi
+22,291,M2064 FUNCIMG AGCmono600dpi
+22,292,M2065 FUNCIMG AGCtable
+22,293,M2066 FUNCIMG OffsetAdjust1st R:0x%03x G:0x%03x B:0x%03x
+22,294,M2067 FUNCIMG GainAdjust      R:0x%03x G:0x%03x B:0x%03x
+22,295,M2068 FUNCIMG OffsetAdjust2nd R:0x%03x G:0x%03x B:0x%03x
+22,296,M2069 FUNCIMG OffsetAdjust1st G:0x%03x
+22,297,M2070 FUNCIMG GainAdjust      G:0x%03x
+22,298,M2071 FUNCIMG OffsetAdjust2nd G:0x%03x
+22,299,M2072 FUNCIMG PeakVal R[%d] G[%d] B[%d]
+22,300,M2073 FUNCIMG TargetPeak Val[%d] Color[%d]
+22,301,M2074 FUNCIMG LightWidth R[%d] G[%d] B[%d] Diff[%d]
+22,302,M2075 FUNCIMG SpeedType[%d]
+22,303,M2076 FUNCIMG SetCnt[%d]
+22,304,M2306 [IMG]sce_setup_err sce:%d seq:%d page:0x%x
+22,305,M2307 [IMG]sce_start_err sce:%d seq:%d page:0x%x
+23,1,M1336 TIMER START,%d,%d,%d
+23,2,M1337 TIMER STOP,%d,stop,%d
+23,3,M1338 TIMER SET,%d,%d,%d
+23,4,M1339 VSYNC SET,%d,%d
+23,5,M1340 CR:ini
+23,6,M1341 CR:iniHp
+23,7,M1342 CR:ini2
+23,8,M1343 CR:iniShd
+23,10,M1344 [dpa]excite
+23,11,M1345 vref 400mA %ld
+23,12,M1346 vref 200mA %ld
+23,14,M1347 [crg]rcvErr:%d
+23,15,M1348 [crg]tmrErr%d
+23,16,M1349 [crg]MovErr%d
+23,17,M1350 snd_EV_CRG_SHD
+23,18,M1351 snd_EV_CRG_ORG_DET
+23,19,M1352 snd_EV_CRG_PACK
+23,20,M1353 snd_EV_CRG_SCN_PRE
+23,21,M1354 snd_EV_CRG_DP_READ
+23,22,M1355 snd_EV_CRG_DP_BLAK
+23,23,M1356 snd_EV_CRG_DP_BLAK2
+23,25,M1357 SCENA_DP_SCN_NEXT %d
+23,26,M1358 EV_CRG_VSYNC_PEAK %d
+23,27,M1359 OVMON_NORMAL %d
+23,28,M1360 [org]OVMON_ORG %d
+23,29,M1361 [org]OVMON_ORG_SECOND %d
+23,31,M1362 [crg]len:%hd dot,%hd pls
+23,32,M1363 [crg]scn
+23,34,M1364 pi:%d
+23,35,M1365 pi:%d (slow up)
+23,36,M1366 pi:%d (ini)
+23,37,M1367 pi (const):%d
+23,38,M1368 plsNow:%hd
+23,39,M1369 [crg]plsTar:%hd
+23,40,M1370 plsCnt:%hd
+23,41,M1371 plsDwn:%hd
+23,42,M1372 [crg]posNow:%hd
+23,43,M1373 posDwn:%hd
+23,44,M1374 posTar:%hd
+23,45,M1375 posStp:%hd
+23,46,M1376 [crg]tarPls:%hd,tarPos:%hd
+23,47,M1377 [crg]sts:%d
+23,48,M1378 [crg]ccw:%hd
+23,49,M1379 [crg]req:%d
+23,50,M1380 [crg]pha:%d
+23,52,M1381 up->cst
+23,53,M1382 cst->dwn
+23,54,M1383 dwn->stp
+23,55,M1384 [crg]posSame
+23,57,M1385 crg_tsk: ev[%d]
+23,58,M1386 crg_retry:%ld %ld
+23,60,M1387 crg_ini_1
+23,61,M1388 crg_ini_2
+23,62,M1389 crg_ini_3
+23,63,M1390 [crg]ini sw%d
+24,1,M1391 develop Refresh start
+24,2,M1392 develop Refresh terminate
+24,3,M1393 develop Refresh count %d
+24,4,M1394 develop Refresh RemainTime %d
+24,5,M1395 develop Refresh Complete
+24,6,M1396 develop Refresh TraBelt Aging start
+24,7,M1397 tonerLine cycle %d
+24,8,M1398 aging cycle %d
+24,9,M2096 nowRtcTime=%d Pretime=%d
+24,10,M2097 LastTime rtc=%d
+25,1,M1399 dpa_tsk: ev[%d]
+25,2,M1400 [timer] squence err(%d)
+25,4,M1401 dpComuErr=%02x
+25,5,M1402 dpC > - %02x - %02x - %02x - %02x -
+25,6,M1403 dpS < + %02x + %02x + %02x + %02x +
+25,8,M1404 [ADF]standby[isu] = 0x%02x
+25,9,M1405 [ADF]standby[ctl] = 0x%02x
+25,10,M1406 [ADF]standby[clr] = 0x%02x
+25,11,M1407 [ADF]chg_cmp[%d] = 0x%02x
+25,13,M1408 [FCCC]set[isu] = 0x%02x
+25,14,M1409 [FCCC]set[ctl] = 0x%02x
+25,15,M1410 [FCCC]dp_end_cmp[%d] = 0x%02x
+25,17,M1411 %hd:C_CALL:%d %ld
+25,18,M1412 DP_MAINNON
+25,19,M1413 Err:C9000_NonNum:%d
+25,20,M1414 DP_SEPARATE!!(0x%08lx)
+25,21,M1415 D_PRE
+25,22,M1416 sta012 = %02x
+25,23,M1417 dummyData = %02x
+25,24,M1418 optDLsum = 0x%02x
+25,25,M1419 dlErrCnt:%hd
+25,26,M1420 DPDL:FIN_DOWNLOAD:OK
+25,27,M1421 DPDL:FIN_DOWNLOAD:NG:%x
+25,29,M1422 com=0x%04x,rw=%d,rest=%d
+25,31,M1423 nextScanCmp = 0x%02x
+25,32,M1424 [Rl]seq.id=%x dt=%x
+25,33,M1425 [RH]seq.id=%x dt=%x
+25,34,M1426 getOptData:ID=%03x,dt=%02x
+25,35,M1427 not find status : %d
+25,36,M1428 step info get failed.
+25,37,M1429 setDpReqData offset error.
+25,38,M1430 optEvIO overflow.
+25,39,M1431 step error in optInitAccess()
+25,41,M1432 [DPM: %c%c%c_%c%c%c%c.%c%c%c.%c%c%c]
+25,42,M1433 [DPB: %c%c%c_%c%c%c%c.%c%c%c.%c%c%c]
+26,1,M1434 PProc.dispatch 0x%x, 0x%x, 0x%x
+26,2,M1435 PProc.T7Start
+26,3,M1436 Pproc.DlpReverse JOB_END
+26,4,M1437 Pproc.DlpReverse INTERVAL
+26,5,M1438 Pproc.DlpReverse Complate
+26,8,M1439 %d, T7Len:%d
+26,10,M1440 EXE DrumPolish %d
+26,11,M1441 drum Polish Thresh %d , islast %d, machineType %d
+26,12,M1442 drum Polish dlpTmep %d, Bksts:%d
+26,13,M1443 drum Polish color %d,  Time now %d, before %d  => %d(min)
+26,14,M1444 drum Polish NOT
+27,1,M1445 arbitrate type is reject(state:%d)
+28,1,M1446 ERR_TCCDevAccessEnd
+28,2,M1447 [TCCComplete] step(0x%x) Device(%d)
+28,3,M1448 [TCCInitial] step(0x%x) Device(%d)
+28,4,M1449 [TCCDetectError] errorType(%d) Device(%d)
+28,5,M1450 [TCCReadInfo] device(%d) subNo(%d)
+28,6,M1451 [TCCReadInfo] state err(%d)
+28,7,M1452 [TCCProtectDataWrite] item(%d) dataIndex(%d)
+28,8,M1453 [TCCExecuteMainte] mainNum(%d) subNum(%d) isStart(%d)
+28,9,M1454 [TCCExecuteMainte] (%d) %02x
+28,10,M1455 [TCCNotifyEvent] item(%d)
+28,11,M1456 [TCC_setContStatus] status(%d) color(%d)
+28,12,M1457 [TCC_permitWaitEvent] ret(%d)
+28,13,M1458 [TCC_permitWaitEventCont] ret(%d)
+28,14,M1459 [TCCTimeOutError]
+28,15,M1460 [TCCWriteMachineCode]
+28,16,M1461 [TCCTracePoint] 1(%d) 2(0x%x) 3(0x%x) 4(0x%x) 5(0x%x)
+28,17,M1462 [SER_T] %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x 
+28,18,M1463 [MACHINE CODE][READ] 0x%x 0x%x 0x%x 0x%x
+28,19,M1464 [ROM ID][%d] 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x
+28,20,M1465 [ROM ID]ERROR FAMILY CODE : cnt(%d) familyCode(0x%x) 
+28,21,M1466 COVER OPEN!
+28,22,M1467 [Over Retry Count] mode(%d) trace1(%d) trace2(%d) trace3(%d)
+28,23,M1468 [STATUS PPD]No Presence Pulse mode(%d) pos1(%d) regista(0x%x) 
+28,24,M1469 [SER_M] %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x 
+28,25,M1470 [SER_D] %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x 
+28,26,M1471 [CRC]not Correct CRC: mode(%d) pos1(%d) pos2(%d)
+28,27,M1472 [Retry Count] %d
+28,28,M1473 [ERR]search ROM 
+28,29,M1474 [ERR]verify write data W:1(0x%x) 2(0x%x) 3(0x%x) 4(0x%x) R:1(0x%x) 2(0x%x) 3(0x%x) 4(0x%x)
+28,30,M1475 [reqest write] color(%d) seg(%d) data(0x%x)(0x%x)(0x%x)(0x%x)
+28,31,M1476 color(0x%x) authenticate(0x%x)
+28,32,M1477 [MAP DATA]
+28,33,M1478      [01][02][03][04][05][06][07][08]
+28,34,M1479 [%02x]  %02x  %02x  %02x  %02x  %02x  %02x  %02x  %02x
+28,35,M1480 color = %d: secChipFlagFactor = %d: secChipFlagNotifyState = %d:
+28,36,M1481 individual=%d: tempEven = %d: tempOdd = %d:
+28,37,M1482 [ERR]1wire busy! mode(%d) point(%d)
+28,38,M1483 [ERR]CS BYTE ERROR! mode(%d) point(%d)
+28,39,M1484 please input password key!
+28,40,M1485 [version]TCCController model(%x)(%x)(%x)(%x) main(%d) sub(%d)
+28,41,M1486 [version]TCCDriver main(%d) sub(%d)
+28,42,M1487 [version]TCCSha256 main(%d) sub(%d)
+28,43,M1488 [ERR AUTHENTICATION]mode(%d) pos1(%d) pos2(%d) 
+28,44,M1489 [ERR AUTH MASTER]line mode(%d) 
+28,45,M1490 DATA GENUINE REFRESH
+28,46,M1491 nextJudge %d
+28,47,M1492 EXHAUSTIVE_TEST FINISH!!
+28,48,M1493 secChipFactorMachine = %d
+28,49,M1494 brandFact:%02x(0x%08x)
+28,50,M1495 modelCode:%02x(0x%08x)
+28,51,M1496 dealerID:%02x(0x%08x)
+28,52,M1497 lotIgnore:%02x(0x%08x)
+28,53,M1498 LineMode :%02x(0x%08x)
+28,54,M1499 BkupUID  :%04x,%04x,%04x,%04x
+28,55,M1500 count    :%08d,%08d,%08d,%08d
+28,56,M1501 consump  :%08d,%08d,%08d,%08d
+28,57,M1502 prtConsum:%08d,%08d,%08d,%08d
+28,58,M1503 emptyPage:%08d,%08d,%08d,%08d
+28,59,M1504 [ERR]WRITE PROTECT CS BYTE! CSbyte(%x)
+28,60,M1505 [ERR]Detect Black List!
+28,68,M1506 sub:code error
+28,69,M1507 failure_P%dCmpNG %02x %02x
+28,70,M1508 WB:%02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x
+28,71,M1509 PP:%02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x
+28,72,M1510 sub:write again
+28,73,M1511 sub:again ok
+28,74,M1512 failure_P%dProCmpNG %02x PP(%02x) WB(%02x)
+28,75,M1513 sub:WRITE_OK
+28,76,M1514 sub:JUDGE START
+28,77,M1515 sub:i2cDevErr[I2CMODE] %x %02x
+28,78,M1516 sub:i2cDevErr[READ] %x %02x
+28,79,M1517 sub:i2cDevErr[WRITE] %x %02x
+28,80,M1518 sub:i2cDevErr[CLEAR] %x %02x
+28,81,M1519 please retry
+28,82,M1520 i2c-mode %x ms
+28,83,M1521 sub:verify error %02x
+28,84,M1522 sub:NewSto
+28,85,M1523 sub:P3_E_NG
+28,86,M1524 sub:P3_M_NG
+28,87,M1525 sub:%02x W(%02x) R(%02x)
+28,88,M1526 sub:MASTER:%02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x
+28,89,M1527 sub:logic%d :%d
+28,90,M1528 sub:eeprom clear
+28,91,M1529 sub:failure_P0CmpNG %02x %02x
+28,92,M1530 sub:failure_P2CmpNG %02x %02x
+28,93,M1531 sub:failure_P3CmpNG %02x %02x
+28,94,M1532 sub:failure_P0ProCmpNG %02x
+28,95,M1533 sub:failure_P1ProCmpNG %02x
+28,96,M1534 sub:failure_P2ProCmpNG %02x
+28,97,M1535 sub:failure_P3ProCmpNG %02x
+28,98,M1536 sub:PP%02x WB%02x
+28,99,M1537 sub:PP:%02x %02x %02x %02x %02x %02x %02x %02x %02x %02x
+28,100,M1538 sub:PP:%02x %02x %02x %02x %02x %02x %02x %02x
+28,101,M1539 sub:NG:%02d,%02x,%02x
+28,102,M1540 sub:P0ClearOK
+28,103,M1541 sub:WRITE_OK
+28,104,M1542 sub:P3W:%02hx %02hx %02hx %02hx %02hx %02hx %02hx %02hx
+28,105,M1543 sub:PW0:%02hx %02hx %02hx %02hx %02hx %02hx %02hx %02hx %02hx %02hx %02hx
+28,106,M1544 sub:write again
+28,107,M1545 sub:again ok
+28,108,M1546 sub:%02x
+28,109,M1547 sub:SECOK
+28,110,M1548 sub:P3W:%02x
+28,111,M1549  
+28,112,M1550 %02x%02x%02x
+28,113,M1551 sub:getPage%dControlCode
+28,114,M1552 sub:setPage%dControlCode
+28,115,M1553 sub:ADD 0001 0203 0405 0607 0809 0A0B 0C0D 0E0F
+28,116,M1554 sub:    %04x %04x %04x %04x %04x %04x %04x %04x
+28,117,M1555 sub:not written MchCode
+28,118,M1556 sub:not written SerialNum
+28,119,M1557 sub:MCHCODE %02x
+28,120,M1558 sub:P1W:%02hx%02hx
+28,121,M2340 [PROTECT REG] 64h->0x%02x, 65h->0x%02x
+28,122,M2341 sub machine code 0x%02x, 0x%02x
+28,123,M2342 %02x %02x %02x %02x %02x %02x %02x %02x
+28,124,M2343 %02x %02x %02x %02x %02x %02x
+28,125,M2344 [BLOCK0]
+28,126,M2345 [BLOCK1]
+28,127,M2345 [BLOCK2,3]
+28,128,M2346 [B_DATA]
+28,129,M2347 [C_DATA]
+28,130,M2348 [M_DATA]
+28,131,M2349 [MAC CPU]
+28,132,M2350 [MAC DEVICE]
+28,133,M2351 [master code1]
+28,134,M2352 [master code2]
+28,135,M2353 [master code3]
+28,136,M2354 [NG] compare mastercode (%d), (%d)
+28,137,M2354 [OK] compare mastercode (%d), (%d)
+28,138,M2355 WRITE BLOCK %d
+28,139,M2356 READ BLOCK %d
+28,140,M2357 PROTECT NG
+28,141,M2358 sub:write machine code again
+28,142,M2359 sub:machine code again ok
+28,143,M2360 subDS2465Access file's Ver.%d
+28,144,M2361 sub:JUDGEERROR
+28,145,M2362 sub:DEVICEERROR
+28,146,M2363 sub:InitialReadRetry retryCnt(%d)
+28,147,M2364 sub:subWriteModeRetry retryCnt(%d)
+28,148,M2365 sub:SERIAL_WRITE_OK
+28,149,M2366 sub:[NG]set protect 64h->0x%02x(ex:0x%02x), 65h->0x%02x(ex:0x%02x)
+28,150,M2367 sub:block[%d] Verify NG 
+28,151,M2368 sub:ErrPoint functionPoint(%d) step(%d)
+28,168,M1559 RFIDDrv_outCmd,bufOver,%d
+28,169,M1560 RFIDDrv_readSts,sizeErr,%d
+28,170,M1561 RFIDCommunicationErr,%d
+28,171,M1562 RFIDDrv_gPriResSz,unsupported,0x%02x
+28,172,M1563 Sinf_RFIDDatHndl,getResp,%d,0x%02x
+28,173,M1564 RFID_Access read(0x%x,%d)
+28,174,M1565 RFID_Access read=%lx
+28,175,M1566 RFID_Access write(0x%x,%d)
+28,176,M1567 RFID_Access write=%lx
+28,177,M1568 RFID_Hndl rd=0x%lx
+28,178,M1569 RFID_Hndl wr=0x%lx
+28,179,M1570 RFID_Hndl wr_Err
+28,180,M1571 RFID_Hndl wr_byte
+28,181,M1572 RFID_Hndl wr_uni
+28,182,M1573 RFID_Hndl wr_stop
+28,183,M1574 RFID_Hndl sys
+28,184,M1575 RFID_Hndl wr_ver
+28,185,M1576 RFID_Hndl wr_ant
+28,186,M1577 RFID_Hndl wr_car
+28,187,M1578 RFID_Hndl wr_diag
+28,188,M1579 RFID_Hndl putReadCmd,0x%02x
+28,190,M1580 RFID_is_read_info_exec 0x%lx
+28,191,M1581 RFID_res_retry_r
+28,192,M1582 RFID_res_retry_c
+28,193,M1583 RFID_res_err=%lx
+28,194,M1584 RFID_res_disable
+28,195,M1585 RFID_CmdRetry
+28,196,M1586 RFID_DRET %ld
+28,197,M1587 RFID_CSND %ld
+28,198,M1588 RFID_ERREXIT
+28,199,M1589 RFID_a_device 0x%X
+28,200,M1590 RFID_ReqNo=0x%X
+28,201,M1591 RFID_WriteInfo No=0x%X
+28,202,M1592 RFID_InvalidRequst 0x%X
+28,203,M1593 RFID_ExeEvt_err=0x%x
+28,204,M1594 RFID_PGCntWR[%d] ar:%ld dt:%ld
+28,205,M1595 RFID_Err[%d]=0x%x
+28,206,M1596 RFID_SetRdInf_err=0x%x
+28,207,M1597 RFID_SetRes_w[%d]=0x%x
+28,208,M1598 RFID_sysinf flg=0x%x
+28,209,M1599 RFID_RFID [%d] OK
+28,210,M1600 RFID_idx  rfid = 0x%08lx
+28,211,M1601 RFID_calc rfid = 0x%08lx
+28,212,M1602 RFID_RFID [%d] OK
+28,213,M1603 RFID_RFID [%d] NG
+28,214,M1604 RFID_limitCode OK %d
+28,215,M1605 RFID_limitCode NG %d
+28,216,M1606 RFID_RflNG3 %d
+28,217,M1607 RFID_Refill[%d]=0x%x
+28,218,M1608 RFID_noti_%d,ERR
+28,219,M1609 RFID_noti_%d,NGE
+28,220,M1610 RFID_noti_%d,PERR
+28,221,M1611 RFID_noti_%d,PNGE
+28,222,M1612 RFID_noti[%d],Other:%d
+28,223,M1613 RFID_InitRF[%d] NonR
+28,224,M1614 RFID_SetRes_err=0x%x
+28,225,M1615 RFID_cue_over=0x%x
+28,226,M1616 RFID_WrCmdCancel 0x%x
+28,227,M1617 RFID_CMD(0x%x)
+28,228,M1618 RFID_ret=%d
+28,229,M1619 RFID_END
+28,230,M1620 RFID_CsmRD[%d] %ld
+28,231,M1621 RFID_PrtCsmRD[%d] %d
+28,232,M1622 RFID_stop %d
+28,233,M1623 RFID_notGenu->proErr  %d
+28,235,M1624 RFID_CapaNG
+28,236,M1625 RFID_cvrOpen
+28,237,M1626 RFID_cvrClose
+28,238,M1627 RFID_TNRLOW %d
+28,239,M1628 RFID_ALREADY_TNRLOW %d
+28,240,M1629 RFID_SET_TNRLOW %d
+28,241,M1630 RFID_EMPTY %d
+28,242,M1631 RFID_RFCLR_EXEC[%d]
+28,243,M1632 RFID_EmpUnd30[%d]
+28,244,M1633 RFID_upSD(%d,%d,%d,%d)
+28,245,M1634 RFID_PRTEND %d %ld
+28,246,M1635 RFID_UPDATE %d %d
+28,247,M1636 RFID_exe_evt=%x
+28,248,M1637 RFID_CsmWR[%d] ar:%ld dt:%ld
+28,249,M1638 RFID_PrtCsmWR[%d] ar:%ld dt:%ld
+28,250,M1639 RFID_EmpM_WR[%d] dt:%hd
+28,251,M1640 RFID_EmpS_WR[%d] dt:%hd
+28,252,M1641 RFID_DIAG_ant=%d
+28,253,M1642 RFID_SEQ_WAVE %x
+28,254,M1643 RFID_NotGen %d
+28,255,M1644 RFID_residx=%x
+28,256,M1645 RFID_icref,0x%x,NG,%d
+28,257,M1646 RFID_icref,0x%x,OK,%d
+28,258,M1647 RFID_ADev=%X
+28,259,M1648 RFID_ucp[0]=%X
+28,260,M1649 RFID_Mask=%X
+28,261,M1650 RFID_PRT TYPECHK NOTGEN!!
+28,262,M1651 RFID_PRT TYPECHK GEN!!
+28,263,M1652 RFID_CapaNG %d
+28,264,M1653 RFID_Gen %d
+28,265,M1654 RFID_mirror[%d] %ld
+28,266,M1655 RFID_EmpRD Emp[%d]
+28,267,M1656 RFID_EmpRD NotE[%d]
+28,268,M1657 RFID_wk[%d]:%d %x
+28,269,M1658 RFID_EmptyEmp[%d] Pmt:%d
+28,270,M1659 RFID_InitEmp[%d] NonE
+28,271,M1660 RFID_MCHCHK NOTGEN!!
+28,272,M1661 RFID_MDLCHK NOTGEN!!
+28,273,M1662 RFID_TNRLOW[%d][%d] %X
+28,274,M1663 RFID_%d %d %d %d
+28,275,M1664 RFID_cue_empty
+28,276,M1665 RFID_s1:UID GEINE [%d]
+28,277,M1666 RFID_s1:UID NONGEINE[%d]
+28,278,M1667 RFID_s1:UID NONSAVE[%d]
+28,279,M1668 RFID_s2:i%d RD%x
+28,280,M1669 RFID_s2:a%d BK%x
+28,281,M1670 RFID_s3 Adev%d BK%x
+28,282,M1671 RFID_s3 wt%d   wk%x
+28,283,M1672 RFID_s4:TYPE%hd
+28,284,M1673 RFID_s4:BKUP_ok %d
+28,285,M1674 RFID_OEM code:bio:NG
+28,286,M1675 RFID_OEM code:lot no:NG
+28,287,M1676 RFID_OEM code:TnrArea=undef
+28,288,M1677 RFID_%d eng_%d,rf_%d
+28,289,M1678 RFID_Product:TnrArea=OEM/undef
+28,290,M1679 RFID_McIndexErr
+28,291,M1680 RFID_TnrAreaCode=%d
+28,292,M1681 RFID_COMM SEND
+28,294,M1682 RFID_MT_A st=%d, dev=%d, idx=%d
+28,295,M1683 RFID_MT_A size error
+28,296,M1684 RFID_MT_A ldata=%ld
+28,297,M1685 RFID_MT_B st=%ld, req=%ld
+28,298,M1686 RFID_MT_B set stop
+28,299,M1687 RFID_MT_B set read dev=%d
+28,300,M1688 RFID_MT_B set write dev=%d, data=%ld
+28,301,M1689 RFID_MT_C dev=%d, idx=%d
+28,302,M1690 RFID_BK,%d,%d,%d,%d
+28,303,M1691 RFID_MT_D resdat[%d]=%02x
+28,305,M1692 RFID_keyError0x20007034\n
+28,306,M1693 RFID_K,C,Y,M\n
+28,307,M1694 RFID_%3d,%3d,%3d,%3d:factor\n
+28,308,M1695 RFID_%3d,%3d,%3d,%3d:notifyState\n
+28,309,M1696 RFID_RFIDDataK\n
+28,310,M1697 RFID_RFIDDataC\n
+28,311,M1698 RFID_RFIDDataY\n
+28,312,M1699 RFID_RFIDDataM\n
+28,313,M1700 RFID_brandFact:%02x(0x%08x)\n
+28,314,M1701 RFID_modelCode:%02x(0x%08x)\n
+28,315,M1702 RFID_lotIgnore:%02x(0x%08x)
+28,316,M1703 RFID_BkupUIDK\n
+28,317,M1704 RFID_BkupUIDC\n
+28,318,M1705 RFID_BkupUIDY\n
+28,319,M1706 RFID_BkupUIDM\n
+28,320,M1707 RFID_%08x : %02x%02x %02x%02x %02x%02x %02x%02x
+28,321,M1708 RFID_%08x : %02x%02x %02x%02x %02x%02x %02x%02x
+28,322,M1709 RFID_nextJudge %s\n
+28,323,M1710 RFID_EXHAUSTIVE_TEST FINISH!!\n
+28,325,M1711 RFID_undefinedColor%d,%d
+28,326,M1712 RFID_lotNoErr%x,%x
+28,327,M1713 RFID_DealerID :%02x(0x%08x)
+28,328,M1714 RFID_StpMode  :%02x(0x%08x)
+30,1,M1715 T7 Not Start dlpPrtCnt=%d PrtRateAve=%d drumPrtCnt=%d
+30,2,M1716 T7 Not Start T7DisableFlag On
+30,3,M1717 INTERVAL T7 Start PrtCnt=%d(TtlCnt=%d, dlp=%d, drum=%d) PrtRateAve=%d (PrtRateTtl=%d)
+30,4,M1718 JOB_END T7 Start PrtCnt=%d(TtlCnt=%d, dlp=%d, drum=%d) PrtRateAve=%d (PrtRateTtl=%d)
+30,5,M1719 T7 Toner Consume Length=%d (0.1mm)
+30,6,M1720 DRUM Toner Length=%d
+30,7,M1721 DLP Toner Length=%d
+30,8,M1722 initial %d
+30,11,M1723 T7.getRefType color:%d, pageId:%d
+30,12,M1724 T7.isDLPcnt color: %d, cnt: %d, last:%d
+30,13,M1725 T7.drumClear color:%d, DrumDistance:%ld
+30,14,M1726 T7.isDrumLen color:%ld, drumLen:%d, drumBufLen:%ld, nowdistance:%ld
+30,15,M1727 T7.exeType judge:%d
+30,16,M1728 T7.JAM color:%d, %d
+30,17,M1729 T7.carry color:%d, %d
+30,18,M1730 T7.getBltLen color:%d, retPrevLen:%d, dlpCnt:%d
+30,19,M1731 T7.dlpClear color:%d
+30,20,M1732 T7.getDlpLen color:%d, DlpBeltLen:%d, DLPCnt:%d, pR:%d, base:%d
+30,21,M1733 T7.getDrumLen color:%d, DrumLen:%d, DrumBufLen:%d, DrmBeltLen:%d
+30,22,M1734 T7.getBltLen color:%d, BeltLen:%d
+30,23,M1735 T7.getCarryLen color:%d, carryLen:%d
+30,24,M1736 T7.recvPrintRate color:%d, rate:%d, totalrate:%d
+30,25,M1737 T7.countUpDLP color:%d, total:%d, count:%d
+30,26,M1738 T7.EXCEPTION_LSU_T7_LINE %d
+31,1,M1739 dbglog %d %d %d
+31,2,M1740 dispatch eFUNC_WST_MSG:0x%x
+31,3,M1741 NotifySeq eventId = 0x%x
+31,4,M1742 detectStart bottleState = %d  detectState = %d
+31,5,M1743 detectStop bottleState = %d  detectState = %d
+31,6,M1744 SensorCheck dCount = %d val = %d
+31,7,M1745 FullDetect dSts = %d dCount = %d
+31,8,M1746 changeDetectState preState=%d ⇒ state=%d
+31,9,M1747 Terminate bottleState = %d  detectState = %d
+31,10,M1748 changeBottleState preState=%d ⇒ state=%d
+32,1,M1749 dispatch eFUNC_OUTTRY_MSG:0x%x
+32,2,M1750 start index:0x%x
+32,3,M1751 StsJudge category:0x%x outtrysts:0x%x ret:0x%x
+32,4,M1752 SetOutTrySts category:0x%x outtrysts:0x%x
+32,5,M1753 UpdDtcTime category:0x%x outtrysts:0x%x continue time:0x%x
+33,1,M1754 FDrmRef.dispatch 0x%x
+33,2,M1755 FDrmRef.Req -> check need drumrefresh
+33,3,M1756 FDrmRef.Req -> start manual
+33,4,M1757 FDrmRef.Req -> start auto
+33,5,M1758 FDrmRef.Req -> terminate
+33,6,M1759 FDrmRef.Req -> cancel
+33,7,M1760 FDrmRef.refreshNecessity(resume refresh)
+33,10,M1761 FDrmRef.refreshNecessity(new unit)
+33,11,M1762 refAllTime:%d
+33,12,M1763 FDrmRef.cancel complete
+33,13,M1764 FDrmRef.complete
+33,14,M1765 printRate:%d
+33,15,M1766 Aging cycle %d
+33,16,M1767 Not Complete Aging cycle %d
+33,17,M1768 DrumRefTblSelect mode %d
+33,18,M1769 LastTime rtc=%d
+33,19,M1770 updateRtcTime prev=%d new=%d
+33,20,M1771 start Drum Ref Manual/Arrive
+33,21,M1772 start Drum Ref Off Aging
+33,22,M1773 start Drum Ref Summer Env
+33,23,M1774 start Drum Ref HH ENV
+33,24,M1775 start Drum Ref Condensation
+33,25,M1776 start Drum Ref err
+33,26,M1777 IDC Detect Start %d
+33,27,M1778 %02d %05d
+33,28,M1779 idc = %d
+33,29,M1780 IDC Detect Retry
+33,30,M1781 idcAve %d
+33,31,M1782 rtc Receive %d
+33,32,M1783 temp=%d
+33,33,M1784 outTemp=%d outHumi=%d
+33,34,M1785 outTemp=%d innerTemp=%d
+33,35,M1786 nowRtcTime=%d Pretime=%d
+33,36,M1787 getElapasedTime %d
+33,37,M1788 drumRef.cycle %d
+33,38,M1789 Casset Heater mode %d
+33,39,M1790 In Temp Humi %d
+33,40,M1791 backup lastRtcTime %d
+33,41,M1792 outerTemp=%d innerTemp=%d humi=%d
+33,42,M1793 isCondensation execute
+34,1,M1794 VppStart ST:%d VppA:%d VppB:%d VppC:%d
+34,2,M1795 VppEnd VPP[P] %d
+34,3,M1796 VppErr VPP[E] %d
+34,4,M1797 VppMeas VsA:%d VsB:%d VsC:%d Vs0:%d
+34,5,M1798 VppDTempReviseParam %d
+34,6,M1799 VppAdj set VppD:%05d
+34,7,M1800 VdcStart VDC[1] %d Vs[T] %d
+34,8,M1801 Vdc abHumi %d => Adj %d
+34,9,M1802 VdEnd VDC %d
+34,10,M1803 VdcCheck VDC[%d] %d FB %d
+34,11,M1804 Vdc adj Vs[T]:%d Vs[%d]:%d Vs[0]:%d => ⊿Vs:%d
+34,12,M1805 Sampling(%2d) AD:%d
+34,13,M1806 Finish Sampling. Ave:%d
+34,14,M1807 VppD:%d
+34,15,M1808 inner temp:%d => normal temp mode
+34,16,M1809 inner temp:%d => low temp mode
+34,17,M1810 humi:%d abHumi:%d
+34,18,M1811 BaseVdc %d
+34,19,M1812 帯電データ=%d  =>  DC帯電電圧=%d(V)
+34,20,M1813 帯電電流データ=%d(uA)
+34,21,M1814 帯電データ半速=%d  =>  DC帯電電圧=%d(V)
+34,22,M1815 帯電電流データ半速=%d(uA)
+34,23,M1816 線速=%d(mm/s)
+34,24,M1817 ⊿Vs:%d Yi:%d(*100) => VdcAdjParam.B:%05d
+34,25,M1818 idcFeedBackAdj:%05d
+34,26,M1819 cnt=%d Vdc=%d FB=%d adj=%d ==> Vdc=%d
+34,27,M1820 MCAdj.absTemp:%d, preInTemp:%d, inTemp:%d
+34,28,M1821 MCAdj.rcv cancel
+34,29,M1822 MCAdj.rcv rtc time %d(min)
+34,30,M1823 MCAdj exec adjustment time：%d(s) ABSinner_temp:%d(℃) Counter:%d.
+34,31,M1824 MCAdj exec adjustment inner_temp：%d(℃).
+34,32,M1825 MCAdj exec VDC adjustment ：speedMode->%d　pre_seepMode->%d media_type%d
+34,33,M1826 MCAdj no exec.
+34,34,M1827 MC_Interval Adj FirstMC:%d  NowMC:%d  ==> Adj %d
+34,35,M1828 MC Interval isFirst %d param_Vs %d
+34,36,M1829 Vpp Adjust ERR A:%d, B:%d, C:%d
+34,37,M1830 MCAdj mainMotorReadySignal %d
+34,38,M1831 rtc Recive %d
+34,39,M1832 evelop DriveTime %d, Hum %d, adj %d
+34,40,M1833 VppPrediction[P] %d, nowTemp %d, preTemp %d
+35,1,M1834 exception:Paper Transfer volume is minus. speedType:%d humAbsIndex:%d weghtType:%d faceType:%d sizeType:%d
+35,2,M1835 COMPSceRev.getDLPDSGap err　%ld, P1:%x, P2:%x, P3:%x",
+35,9,M1836 1：帯電
+35,10,M1837 2：現像
+35,11,M1838 3：転写
+35,14,M1839 [MC]mcAdjMode: %d  (0x%x)
+35,15,M1840 [MC]mcBase[%d] : %d (0x%x)
+35,16,M1841 [MC]airTemp : %d，airHumid : %d dlpTemp :%d
+35,17,M1842 [MC]%d => A:%d + B:%d + C:%d + D:%d + P:%d + E:%d => %d
+35,18,M1843 [MC]target Vo: %d (0x%x)
+35,19,M1844 [MC]Interval Time %d, (0x%d)
+35,20,M1845 [MC]T7 mode %d (0x%d)
+35,21,M1846 [MC]T7 drum distance %d 
+35,22,M1847 [MC]T7 drum Length %d 
+35,23,M1848 [MC]DrumRefMode : 未対応
+35,24,M1849 [MC]%d => %d
+35,25,M1850 [MC]%d => A:%d + B:%d + C:%d + D:%d + P:%d + E:%d => %d
+35,27,M1851 [DLP]層形成 SlvAC  %d : %d
+35,28,M1852 [DLP]層形成 MagDC  %d : %d
+35,29,M1853 [DLP]層形成 SlvDC  %d : %d
+35,30,M1854 [DLP]Freq    %d
+35,31,M1855 [DLP]Duty    %d
+35,32,M1856 [DLP]airTemp : %d，airHumid : %d dlpTemp :%d
+35,34,M1857 [TRA]温度 : %d, 絶対湿度 : %d
+35,35,M1858 [TRA]%d Belt count : %d, Belt Drive Time : %d
+35,38,M1859 develop Base Duty %d, adj %d
+35,39,M1860 develop Base Vdc %d, adj %d
+35,40,M1861 develop duty Total driveTime %d, Hum %d
+35,41,M1862 develop duty densityType %d, Adj %d
+35,42,M1863 develop vdc densityType %d, Adj %d
+35,43,M1864 main charger vdc densityType %d, Adj %d
+36,1,M1865 dispatch eFUNC_ENVIRONMENT_MSG:0x%x
+36,2,M1866 notifyState sta:0x%x
+36,3,M1867 EnvironmentState reqSta:0x%x preEnvironmentSTA:0x%x
+36,4,M1868 EnvironmentSPD[%d]:0x%x
+36,5,M1869 EnvironmentFSR_STP reqFuserStop:%d EnvironmentFSR_STP:0x%x
+36,6,M1870 judgeEnvironment dlp_temp:%d threTemp:%d ret:0x%x
+36,7,M1871 judgeFuserStop fanFSR_STP:0x%x ret:0x%x
+36,8,M1872 timeOverheatOnCount:%d
+36,9,M1873 timeOverheatOnCountBkup:%d
+36,10,M1874 timeOverheatOffCount:%d
+36,11,M1875 timeOverheatOffCountBkup:%d
+36,12,M2099 priorityStateFlgErr dev:%d event:%d flg:0x%08lx
+36,13,M2193 notifyEvent event:0x%x
+37,285,M1876 noDf,%x
+37,286,M1877 noBridge,%x
+37,287,M1878 initComFlagHistory %d %d %d %d %d %d %d %d ,pos:%d
+38,12,M1879 [%ld]:印刷(両面) / 集約(2in1)
+38,13,M1880 [%ld]:印刷(片面) / 集約(2in1)
+38,14,M1881 [%ld]:印刷(両面) / 集約(4in1)
+38,15,M1882 [%ld]:印刷(片面) / 集約(4in1)
+38,16,M1883 [%ld]:印刷(両面) / 集約(なし)
+38,17,M1884 [%ld]:印刷(片面) / 集約(なし)
+38,18,M1885 [%ld]:現像器カウンタ Black
+38,19,M1886 [%ld]:現像器駆動時間カウンタ Black
+38,20,M1887 [%ld]:ドラムカウンタ Black
+38,21,M1888 [%ld]:ドラム駆動距離カウンタ Black
+38,22,M1889 [%ld]:ドラム駆動時間カウンタ Black
+38,23,M1890 [%ld]:帯電ローラカウンタ
+38,24,M1891 [%ld]:帯電ローラ帯電時間
+38,25,M1892 [%ld]:両面カウンタ
+38,26,M1893 [%ld]:カセット1給紙カウンタ
+38,27,M1894 [%ld]:カセット2給紙カウンタ
+38,28,M1895 [%ld]:カセット3給紙カウンタ
+38,29,M1896 [%ld]:カセット4給紙カウンタ
+38,30,M1897 [%ld]:MPT給紙カウンタ
+38,31,M1898 [%ld]:中折りカウンタ
+38,32,M1899 [%ld]:Finisherメイントレイ排紙カウンタ
+38,33,M1900 [%ld]:パンチカウンタ
+38,34,M1901 [%ld]:ステープル綴じ(中央二個所綴じ)カウンタ
+38,35,M1902 [%ld]:ステープル綴じカウンタ
+38,36,M1903 [%ld]:三つ折りカウンタ
+38,37,M1904 [%ld]:定着カウンタ
+38,38,M1905 [%ld]:定着駆動時間(押圧)
+38,39,M1906 [%ld]:定着駆動時間(離間)
+38,40,M1907 1:カウント処理:Engine　バックアップ位置：Engine
+38,41,M1908 2:カウント処理:Engine　バックアップ位置：Unit
+38,42,M1909 3:カウント処理:Enhance　バックアップ位置：Enhance
+38,43,M1910 4:カウント処理:Controller　バックアップ位置：Engine
+38,44,M1911 [%ld]:機械ライフカウンタ
+38,45,M1912 [%ld]:メンテナンスカウンタA
+38,46,M1913 [%ld]:モノクロコピーカウンタ A3
+38,47,M1914 [%ld]:モノクロコピーカウンタ A4
+38,48,M1915 [%ld]:モノクロコピーカウンタ A5
+38,49,M1916 [%ld]:モノクロコピーカウンタ B4
+38,50,M1917 [%ld]:モノクロコピーカウンタ B5
+38,51,M1918 [%ld]:モノクロコピーカウンタ Folio
+38,52,M1919 [%ld]:モノクロコピーカウンタ Ledger
+38,53,M1920 [%ld]:モノクロコピーカウンタ Legal
+38,54,M1921 [%ld]:モノクロコピーカウンタ Letter
+38,55,M1922 [%ld]:モノクロコピーカウンタ Other Large
+38,56,M1923 [%ld]:モノクロコピーカウンタ Other Small
+38,57,M1924 [%ld]:モノクロコピーカウンタ Statement
+38,58,M1925 [%ld]:モノクロファックスカウンタ A3
+38,59,M1926 [%ld]:モノクロファックスカウンタ A4
+38,60,M1927 [%ld]:モノクロファックスカウンタ A5
+38,61,M1928 [%ld]:モノクロファックスカウンタ B4
+38,62,M1929 [%ld]:モノクロファックスカウンタ B5
+38,63,M1930 [%ld]:モノクロファックスカウンタ Folio
+38,64,M1931 [%ld]:モノクロファックスカウンタ Ledger
+38,65,M1932 [%ld]:モノクロファックスカウンタ Legal
+38,66,M1933 [%ld]:モノクロファックスカウンタ Letter
+38,67,M1934 [%ld]:モノクロファックスカウンタ Other Large
+38,68,M1935 [%ld]:モノクロファックスカウンタ Other Small
+38,69,M1936 [%ld]:モノクロファックスカウンタ Statement
+38,70,M1937 [%ld]:モノクロプリンタカウンタ A3
+38,71,M1938 [%ld]:モノクロプリンタカウンタ A4
+38,72,M1939 [%ld]:モノクロプリンタカウンタ A5
+38,73,M1940 [%ld]:モノクロプリンタカウンタ B4
+38,74,M1941 [%ld]:モノクロプリンタカウンタ B5
+38,75,M1942 [%ld]:モノクロプリンタカウンタ Folio
+38,76,M1943 [%ld]:モノクロプリンタカウンタ Ledger
+38,77,M1944 [%ld]:モノクロプリンタカウンタ Legal
+38,78,M1945 [%ld]:モノクロプリンタカウンタ Letter
+38,79,M1946 [%ld]:モノクロプリンタカウンタ Other Large
+38,80,M1947 [%ld]:モノクロプリンタカウンタ Other Small
+38,81,M1948 [%ld]:モノクロプリンタカウンタ Statement
+38,82,M1949 [%ld]:二次転写カウンタ
+38,83,M1950 [%ld]:コピースキャンカウンタ
+38,84,M1951 [%ld]:ファックススキャンカウンタ
+38,85,M1952 [%ld]:その他スキャンカウンタ
+38,86,M1953 [%ld]:ソータ通紙カウンタ
+38,87,M1954 [%ld]:トータルカウンタ
+38,88,M1955 %04x,%04x,%04x,%04x,%04x,%04x,%04x,%04x
+38,89,M1956 PA,  PB,  PC,  PD,  PE,  PF,  PG,  PH
+38,90,M1957 --,  PJ,  PK,  PL,  PM,  PN,  --,  --
+38,91,M1958 No   val:sensor
+38,92,M1959 taskID       remain/total  stack area address
+38,93,M1960 00:intstk    %04d/%04d     %08x-%08x
+38,94,M1961 ### Stack Status ###
+38,95,M1962 00:intstk    OVER/%04d     %08x-%08x   warning!!!
+38,96,M1963 fixlog
+38,97,M1964 %02x %02x %04x
+38,98,M1965 %02x %02x %02x %02x %02x %02x
+38,99,M1966 %08x
+38,100,M1967 [%02d] %d
+38,101,M1968 ≪定着制御パラメータ≫
+38,102,M1969 initComFlagHistory %d %d %d %d %d %d %d %d ,pos:%d
+38,103,M1970 pageId prId sFeed sEject size weight mediaType Permit waitImage   velocity    printSpeed(0:full,2:half)
+38,104,M1971   %02d    %02x   %02x    %02x     %02x    %02x      %02x       %02x       %02x      %02x            %02x
+38,105,M1972 Buffer Use (UseMax/Capacity) %d/%d
+38,106,M1973 RFID_Access write(0x%x,%d)
+38,107,M1974 RFID_Access write=%lx
+38,108,M1975 RFID_BkupUIDC\n
+38,109,M1976 RFID_BkupUIDK\n
+38,110,M1977 RFID_BkupUIDM\n
+38,111,M1978 RFID_BkupUIDY\n
+38,112,M1979 RFID_brandFact:%02x(0x%08x)\n
+38,113,M1980 RFIDDrv_outCmd,bufOver,%d
+38,114,M1981 RFID_%08x : %02x%02x %02x%02x %02x%02x %02x%02x
+38,115,M1982 RFID_%08x : %02x%02x %02x%02x %02x%02x %02x%02x
+38,116,M1983 RFIDCommunicationErr,%d
+38,117,M1984 RFID_cue_over=0x%x
+38,118,M1985 RFID_%3d,%3d,%3d,%3d:factor\n
+38,119,M1986 RFID_Hndl wr=0x%lx
+38,120,M1987 RFID_Hndl wr_byte
+38,121,M1988 RFID_keyError0x20007034\n
+38,122,M1989 RFID_K,C,Y,M\n
+38,123,M1990 RFID_lotIgnore:%02x(0x%08x)
+38,124,M1991 RFID_modelCode:%02x(0x%08x)\n
+38,125,M1992 RFID_notGenu->proErr  %d
+38,126,M1993 RFID_%3d,%3d,%3d,%3d:notifyState\n
+38,127,M1994 RFID_stop %d
+38,128,M1995 RFID_RFIDDataC\n
+38,129,M1996 RFID_RFIDDataK\n
+38,130,M1997 RFID_RFIDDataM\n
+38,131,M1998 RFID_RFIDDataY\n
+38,133,M1999 (TOMCAT3センサー一覧 ここから)
+38,134,M2000 (TOMCAT3センサー一覧 ここまで)
+39,1,M2061 CASS%d, %d: リフトモーター過電流検知(1：起動中異常通知，2：定常中異常通知，3：逆転中異常通知)
+39,2,M0814 FD:feedId ERR!! feederId=%d
+39,3,M0815 Exception LiftUp!! feederId=%d
+39,4,M0816 Exception Liftdown!! feederId=%d
+39,5,M2098 Exception ErrorCount!! feederId=%d
+40,1,M2314 deviceGroup[%d] on but group[%d] not steady
+40,2,M2315 deviceGroup[%d] off but group[%d] not stop
