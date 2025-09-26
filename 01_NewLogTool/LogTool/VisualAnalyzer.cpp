@@ -62,7 +62,7 @@ void visualAnalyzeLogInfo(char* form_msg);
 void updateTimeDisp();
 void motionIintial(unsigned short point, unsigned char id);
 bool isLastMotion(unsigned short id);
-
+void startAnalyze(unsigned char startPart, double length, unsigned char id);
 void vaMouseMove();
 void vaLButtonUp();
 void editStart(HWND hDlg);
@@ -1324,6 +1324,10 @@ void deviceLogAnalyze(char* deviceStr, signed short val, signed char id)
 						if (bra != -1) {
 							if (devicePoint[i].value != 0) {
 								currentBranch[bra].nextPoint = analyzeBranch[bra].nextPoint2;
+								signed short spId = getStartPartId(analyzeBranch[bra].nextPoint2);
+								if (spId != -1) {
+									startAnalyze(startPoint[(unsigned char)spId].startPart, 0, 0);
+								}
 							} else {
 								currentBranch[bra].nextPoint = analyzeBranch[bra].nextPoint1;
 							}
