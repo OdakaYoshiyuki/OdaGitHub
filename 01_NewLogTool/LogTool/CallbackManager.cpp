@@ -113,6 +113,10 @@ const char *unitTypeText[EUNIT_TYPE_NUM] = {
 	 "ENGINE"
 	,"DPS_ENGINE"
 	,"DF"
+	,"PF"
+	,"PH"
+	,"SFRG"
+	,"MOTOR_CPU"
 };
 
 // ƒc[ƒ‹‚ÌI—¹ˆ—

@@ -1455,7 +1455,7 @@ void outPutTcdFile()
 		sameWrapCount = 0;
 		while (fgets(buf, sizeof(buf), tcmFileP) != NULL) {
 			ptr = strtok_s(buf, ",\r\n", &ctx);
-			readTime = atoi(ptr) * 2;
+			readTime = atoi(ptr) * msPerClock;
 			ptr = strtok_s(NULL, ",\r\n", &ctx);
 			id = atoi(ptr);
 			ptr = strtok_s(NULL, ",\r\n", &ctx);
@@ -1599,7 +1599,9 @@ bool isScenario(int id)
 //カウント値を時間に変換する関数
 float tcmConvertCountsToTime(signed long count)
 {
-	float time = ((float)count / 500);
+	float time;
+	
+	time = ((float)(count * msPerClock) / 1000);
 
 	return time;
 }

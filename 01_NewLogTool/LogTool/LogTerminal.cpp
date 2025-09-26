@@ -596,7 +596,7 @@ void createLog (unsigned char buf)
 	if (tcmMode == false) {
 		if((pos - 7) == (arg_num * argSize)){
 			//VisualAnalyzerの時間更新
-			isUpdateValog = updateVisualAnalyzeTime(tim * 2);
+			isUpdateValog = updateVisualAnalyzeTime(tim * msPerClock);
 
 			// 表示対象のロググループかのチェック
 			if(log_group_disp[group_id] == FALSE) {
@@ -604,21 +604,21 @@ void createLog (unsigned char buf)
 				msg = get_msgtbl(group_id, log_no, arg_num);
 				createLogMessage(NULL, tim, log_no, err_lvl, group_id, arg_type, arg_num, msg, &log[7]);
 				paramConversion(arg_num, arg_type, &log[7], logParam); //paramにデータを格納
-				LogMonitor(msg, tim * 2, logParam, arg_num);
+				LogMonitor(msg, tim * msPerClock, logParam, arg_num);
 				checkVisualLog(isUpdateValog);
 			} else if ((defLogLvl == LOGLVL_ERROR) && ((err_lvl != LOGLVL_ERROR) && (err_lvl != LOGLVL_SYSTEM))) {
 				//表示はしないが、ログメッセージに変換はする
 				msg = get_msgtbl(group_id, log_no, arg_num);
 				createLogMessage(NULL, tim, log_no, err_lvl, group_id, arg_type, arg_num, msg, &log[7]);
 				paramConversion(arg_num, arg_type, &log[7], logParam); //paramにデータを格納
-				LogMonitor(msg, tim * 2, logParam, arg_num);
+				LogMonitor(msg, tim * msPerClock, logParam, arg_num);
 				checkVisualLog(isUpdateValog);
 			} else if ((defLogLvl == LOGLVL_WARNING) && (err_lvl == LOGLVL_INFORMATION)) {
 				//表示はしないが、ログメッセージに変換はする
 				msg = get_msgtbl(group_id, log_no, arg_num);
 				createLogMessage(NULL, tim, log_no, err_lvl, group_id, arg_type, arg_num, msg, &log[7]);
 				paramConversion(arg_num, arg_type, &log[7], logParam); //paramにデータを格納
-				LogMonitor(msg, tim * 2, logParam, arg_num);
+				LogMonitor(msg, tim * msPerClock, logParam, arg_num);
 				checkVisualLog(isUpdateValog);
 			} else {
 				if ((group_id == 3) && ((log_no >= 1) && (log_no <= 3)) ) {
@@ -643,7 +643,7 @@ void createLog (unsigned char buf)
 						dispLog();
 					}
 					paramConversion(arg_num, arg_type, &log[7], logParam); //paramにデータを格納
-					LogMonitor(line_mbuf, tim * 2, logParam, arg_num);
+					LogMonitor(line_mbuf, tim * msPerClock, logParam, arg_num);
 					// ListBox横幅以上のメッセージの場合のみ横ScrollBarを出す
 					if(max_len >= 0x52) {
 						SendMessage(lbox, LB_SETHORIZONTALEXTENT, (WPARAM)((max_len+1)*6), (LPARAM)0);
@@ -687,7 +687,7 @@ void createLog (unsigned char buf)
 				timeStamp(line_mbuf);
 				dispLog();
 			}
-			LogMonitor(line_mbuf, time * 2, logParam, 1);
+			LogMonitor(line_mbuf, time * msPerClock, logParam, 1);
 			// ListBox横幅以上のメッセージの場合のみ横ScrollBarを出す
 			if(max_len >= 0x52) {
 				SendMessage(lbox, LB_SETHORIZONTALEXTENT, (WPARAM)((max_len+1)*6), (LPARAM)0);
