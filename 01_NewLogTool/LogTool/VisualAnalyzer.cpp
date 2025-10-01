@@ -63,6 +63,7 @@ void updateTimeDisp();
 void motionIintial(unsigned short point, unsigned char id);
 bool isLastMotion(unsigned short id);
 void startAnalyze(unsigned char startPart, double length, unsigned char id);
+void foldPaper(unsigned char startPart);
 void vaMouseMove();
 void vaLButtonUp();
 void editStart(HWND hDlg);
@@ -1326,7 +1327,7 @@ void deviceLogAnalyze(char* deviceStr, signed short val, signed char id)
 								currentBranch[bra].nextPoint = analyzeBranch[bra].nextPoint2;
 								signed short spId = getStartPartId(analyzeBranch[bra].nextPoint2);
 								if (spId != -1) {
-									startAnalyze(startPoint[(unsigned char)spId].startPart, 0, 0);
+									foldPaper(startPoint[(unsigned char)spId].startPart);
 								}
 							} else {
 								currentBranch[bra].nextPoint = analyzeBranch[bra].nextPoint1;
@@ -1501,6 +1502,40 @@ void changeProfileInfo(unsigned short stPos, unsigned char id)
 	}
 }
 
+void foldPaper(unsigned char startPart)
+{
+	unsigned char i;
+	unsigned short point = 0;
+	unsigned short stPos = 0;
+
+	for (i = 0; i < startPartNum; i++) {
+		if (startPoint[i].startPart == startPart) {
+			point = startPoint[i].point;
+			stPos = i;
+			break;
+		}
+	}
+	for (i = 0; i < MOTION_NUM; i++) {
+		if (profileInfo[i].state == EPRIFILE_ACTIVE) {
+			if (checkFoldPoint(stPos, i)) {
+				changeProfileInfo(stPos, i);
+			}
+		}
+	}
+	for (i = 0; i < MOTION_NUM; i++) {
+		if (profileInfo[i].state == EPRIFILE_SPLIT) {
+			profileInfo[i].startPart = startPart;
+			profileInfo[i].state = EPRIFILE_ACTIVE;
+			if (bottomPosiInfo[i].dir == EFOWARD) {
+				updateBottomPointFoward(i);
+			} else {
+				updateBottomPointSwitch(i);
+			}
+		}
+	}
+	
+}
+
 void startAnalyze(unsigned char startPart, double length, unsigned char id)
 {
 	unsigned short point = 0;
@@ -1511,11 +1546,8 @@ void startAnalyze(unsigned char startPart, double length, unsigned char id)
 	if (id >= MOTION_NUM) {
 		return;
 	}
-
 	if (profileInfo[id].state == EPRIFILE_ACTIVE) {
-		if (!isFold(startPart)) {
-			return;//‚·‚Å‚É”À‘—’†‚Ìê‡–³‹B‹l‚İ‚È‚¨‚µ‚Ìê‡‚à‚ ‚é‚½‚ß
-		}
+		return;//‚·‚Å‚É”À‘—’†‚Ìê‡–³‹B‹l‚İ‚È‚¨‚µ‚Ìê‡‚à‚ ‚é‚½‚ß
 	}
 	for (i = 0; i < startPartNum; i++) {
 		if (startPoint[i].startPart == startPart) {
@@ -1524,57 +1556,35 @@ void startAnalyze(unsigned char startPart, double length, unsigned char id)
 			break;
 		}
 	}
-	//Ü‚è‚Ìê‡
-	if (isFold(startPart)) {
-		for (i = 0; i < MOTION_NUM; i++) {
-			if ((profileInfo[i].state == EPRIFILE_ACTIVE) || (profileInfo[i].state == EPRIFILE_WAIT)) {
-				if (checkFoldPoint(stPos, i)) {
-					changeProfileInfo(stPos, i);			
-				}
-			}
-		}
-		for (i = 0; i < MOTION_NUM; i++) {
-			if (profileInfo[i].state == EPRIFILE_SPLIT) {
-				profileInfo[i].startPart = startPart;
-				profileInfo[i].state = EPRIFILE_ACTIVE;
-				if (bottomPosiInfo[i].dir == EFOWARD) {
-					updateBottomPointFoward(i);
-				} else {
-					updateBottomPointSwitch(i);
-				}
-			}
-		}
-	} else {
-		profileInfo[id].startPart = startPart;
-		profileInfo[id].length = length;
-		profileInfo[id].waitId = 0xff;
-		profileInfo[id].prfType = EPROF_NORMAL;
-		profileInfo[id].mId = id;
+	profileInfo[id].startPart = startPart;
+	profileInfo[id].length = length;
+	profileInfo[id].waitId = 0xff;
+	profileInfo[id].prfType = EPROF_NORMAL;
+	profileInfo[id].mId = id;
 
-		for (i = 0; i < MOTION_NUM; i++) {
-			if ((profileInfo[i].state == EPRIFILE_ACTIVE) || (profileInfo[i].state == EPRIFILE_WAIT)) {
-				pos = topPosHistory[i].topPos;
-				while (pos != topPosHistory[i].bottomPos) {
-					if (topPosHistory[i].history[pos] == point) {
-						profileInfo[id].state = EPRIFILE_PAUSE;
-						profileInfo[startPoint[stPos].latestId].waitId = id;
-						break;
-					}
-					pos = (pos != 0) ? pos - 1 : HISTORY_BUF_NUM - 1;
+	for (i = 0; i < MOTION_NUM; i++) {
+		if ((profileInfo[i].state == EPRIFILE_ACTIVE) || (profileInfo[i].state == EPRIFILE_WAIT)) {
+			pos = topPosHistory[i].topPos;
+			while (pos != topPosHistory[i].bottomPos) {
+				if (topPosHistory[i].history[pos] == point) {
+					profileInfo[id].state = EPRIFILE_PAUSE;
+					profileInfo[startPoint[stPos].latestId].waitId = id;
+					break;
 				}
+				pos = (pos != 0) ? pos - 1 : HISTORY_BUF_NUM - 1;
 			}
 		}
-		startPoint[stPos].latestId = id;
-		if (profileInfo[id].state == EPRIFILE_IDLE) {
-			profileInfo[id].state = EPRIFILE_ACTIVE;
-		}
-		if (profileInfo[id].startPart == 0xff) {
-			profileInfo[id].state = EPRIFILE_WAIT;
-		}
-
-		motionIintial(point, id);
-		updateBottomPointFoward(id);
 	}
+	startPoint[stPos].latestId = id;
+	if (profileInfo[id].state == EPRIFILE_IDLE) {
+		profileInfo[id].state = EPRIFILE_ACTIVE;
+	}
+	if (profileInfo[id].startPart == 0xff) {
+		profileInfo[id].state = EPRIFILE_WAIT;
+	}
+
+	motionIintial(point, id);
+	updateBottomPointFoward(id);
 }
 
 void motionIintial(unsigned short point, unsigned char id)
@@ -3273,7 +3283,8 @@ signed short checkSwitchPoint(unsigned short point)
 		}
 	}
 
-
+	//@@
+	/*
 	for (i = 0; i < startPartNum; i++) {
 		if (point == analyzePoint[startPoint[i].point].prePoint) {
 			if (isFold(startPoint[i].startPart)) {
@@ -3281,6 +3292,7 @@ signed short checkSwitchPoint(unsigned short point)
 			}
 		}
 	}
+	*/
 	return ret;
 }
 
